@@ -1,0 +1,107 @@
+name: musicplayer
+description: "A new Flutter project."
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  #For Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  intl_utils: ^2.8.7
+
+  #For Services locator
+  get_it: ^7.6.7
+
+  #For State Management
+  bloc: ^8.1.3
+  flutter_bloc: ^8.1.4
+
+  #For Local Storage
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.1
+
+  #For Models class
+  freezed: ^2.5.1
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+
+  #For Ui
+  fluttertoast: ^8.2.4
+  flutter_screenutil: ^5.9.0
+  flutter_svg: ^2.0.10+1
+
+
+  #Others
+  device_preview: ^1.1.0
+  js: ^0.6.3
+  url_launcher: ^6.2.6
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  json_serializable: ^6.7.1
+
+dependency_overrides:
+  intl: ^0.19.0
+  js: ^0.7.1
+  meta: ^1.14.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svg/
+    - assets/lottie/
+    - assets/temp/
+    - assets/gif/
+  fonts:
+    - family: ClashDisplay
+      fonts:
+        - asset: assets/fonts/ClashDisplay_Complete/ClashDisplay-Light.otf
+          weight: 300
+        - asset: assets/fonts/ClashDisplay_Complete/ClashDisplay-Regular.otf
+          weight: 400
+        - asset: assets/fonts/ClashDisplay_Complete/ClashDisplay-Medium.otf
+          weight: 500
+        - asset: assets/fonts/ClashDisplay_Complete/ClashDisplay-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/ClashDisplay_Complete/ClashDisplay-Bold.otf
+          weight: 700
+
+    - family: GeneralSans
+      fonts:
+        - asset: assets/fonts/GeneralSans_Complete/GeneralSans-Light.otf
+          weight: 300
+        - asset: assets/fonts/GeneralSans_Complete/GeneralSans-Regular.otf
+          weight: 400
+        - asset: assets/fonts/GeneralSans_Complete/GeneralSans-Medium.otf
+          weight: 500
+        - asset: assets/fonts/GeneralSans_Complete/GeneralSans-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/GeneralSans_Complete/GeneralSans-Bold.otf
+          weight: 700
+
+flutter_intl:
+  class_name: MyLocalization
+  arb_dir: assets/translation
+  output_dir: lib/src/app/gen_localization
+  enabled: true
+
+
+
+
