@@ -10,9 +10,13 @@ class AssetsManager {
   factory AssetsManager() => _instance;
 
   static const String can = '$imagePath/can.png';
-  static const String apple = '$svgPath/apple.svg';
 
-  static const String greenBadge = '$imagePath/greenbadge.png';
-  static const String redBadge = '$imagePath/redbadge.png';
-  static const String purpleBadge = '$imagePath/purplebadge.png';
+  static const String fullRedCan = '$imagePath/fullredcan.png';
+  static const String fullRedCan2 = '$imagePath/fullredcan-removebg.png';
+
+  static const String fullRedCanSvg = '$svgPath/fullredcan.svg';
+
+  static const String fullPurpleCan = '$imagePath/fullpurplecan.png';
+  static const String fullGreenCan = '$imagePath/fullgreencan.png';
+  static const String cans = '$imagePath/cans.jpeg';
 }
