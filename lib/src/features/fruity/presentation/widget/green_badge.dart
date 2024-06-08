@@ -37,9 +37,10 @@ class GreenBadge extends CustomPainter {
         size.height * 0.9976387);
     path_0.close();
 
-    Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_0, paint_0_fill);
+    Paint paint0Fill = Paint()..style = PaintingStyle.fill;
+    paint0Fill.color = Colors.white.withOpacity(1.0);
+    paint0Fill.blendMode = BlendMode.softLight;
+    canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
     path_1.moveTo(size.width * 0.9443546, size.height * 0.3279555);
@@ -75,41 +76,42 @@ class GreenBadge extends CustomPainter {
     path_1.lineTo(size.width * 0.9443546, size.height * 0.3279555);
     path_1.close();
 
-    Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
-    paint_1_fill.color = Color(0xffE6FFDE).withOpacity(1.0);
-    canvas.drawPath(path_1, paint_1_fill);
+    Paint paint1Fill = Paint()..style = PaintingStyle.fill;
+    paint1Fill.color = const Color(0xffE6FFDE).withOpacity(1.0);
+    paint1Fill.blendMode = BlendMode.color;
+    canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
     path_2.moveTo(size.width * 0.1350542, size.height * 0.3453272);
     path_2.lineTo(size.width * 0.1350542, size.height * 0.6130340);
 
-    Paint paint_2_stroke = Paint()
+    Paint paint2Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.007868446;
-    paint_2_stroke.color = Color(0xff048C3D).withOpacity(1.0);
-    paint_2_stroke.strokeCap = StrokeCap.round;
-    paint_2_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_2, paint_2_stroke);
+    paint2Stroke.color = const Color(0xff048C3D).withOpacity(1.0);
+    paint2Stroke.strokeCap = StrokeCap.round;
+    paint2Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_2, paint2Stroke);
 
-    Paint paint_2_fill = Paint()..style = PaintingStyle.fill;
-    paint_2_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_2, paint_2_fill);
+    Paint paint2Fill = Paint()..style = PaintingStyle.fill;
+    paint2Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_2, paint2Fill);
 
     Path path_3 = Path();
     path_3.moveTo(size.width * 0.8644303, size.height * 0.3453272);
     path_3.lineTo(size.width * 0.8644303, size.height * 0.6130340);
 
-    Paint paint_3_stroke = Paint()
+    Paint paint3Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.007868446;
-    paint_3_stroke.color = Color(0xff048C3D).withOpacity(1.0);
-    paint_3_stroke.strokeCap = StrokeCap.round;
-    paint_3_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_3, paint_3_stroke);
+    paint3Stroke.color = const Color(0xff048C3D).withOpacity(1.0);
+    paint3Stroke.strokeCap = StrokeCap.round;
+    paint3Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_3, paint3Stroke);
 
-    Paint paint_3_fill = Paint()..style = PaintingStyle.fill;
-    paint_3_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_3, paint_3_fill);
+    Paint paint3Fill = Paint()..style = PaintingStyle.fill;
+    paint3Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_3, paint3Fill);
 
     Path path_4 = Path();
     path_4.moveTo(size.width * 0.6076813, size.height * 0.3676623);
@@ -150,17 +152,17 @@ class GreenBadge extends CustomPainter {
         size.height * 0.3676623);
     path_4.close();
 
-    Paint paint_4_stroke = Paint()
+    Paint paint4Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_4_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_4_stroke.strokeCap = StrokeCap.round;
-    paint_4_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_4, paint_4_stroke);
+    paint4Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint4Stroke.strokeCap = StrokeCap.round;
+    paint4Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_4, paint4Stroke);
 
-    Paint paint_4_fill = Paint()..style = PaintingStyle.fill;
-    paint_4_fill.color = Color(0xffBFE375).withOpacity(1.0);
-    canvas.drawPath(path_4, paint_4_fill);
+    Paint paint4Fill = Paint()..style = PaintingStyle.fill;
+    paint4Fill.color = const Color(0xffBFE375).withOpacity(1.0);
+    canvas.drawPath(path_4, paint4Fill);
 
     Path path_5 = Path();
     path_5.moveTo(size.width * 0.4369880, size.height * 0.6200131);
@@ -179,17 +181,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.5678367,
         size.height * 0.6032120);
 
-    Paint paint_5_stroke = Paint()
+    Paint paint5Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_5_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_5_stroke.strokeCap = StrokeCap.round;
-    paint_5_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_5, paint_5_stroke);
+    paint5Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint5Stroke.strokeCap = StrokeCap.round;
+    paint5Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_5, paint5Stroke);
 
-    Paint paint_5_fill = Paint()..style = PaintingStyle.fill;
-    paint_5_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_5, paint_5_fill);
+    Paint paint5Fill = Paint()..style = PaintingStyle.fill;
+    paint5Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_5, paint5Fill);
 
     Path path_6 = Path();
     path_6.moveTo(size.width * 0.4622151, size.height * 0.6092094);
@@ -201,17 +203,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.5234343,
         size.height * 0.6020236);
 
-    Paint paint_6_stroke = Paint()
+    Paint paint6Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_6_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_6_stroke.strokeCap = StrokeCap.round;
-    paint_6_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_6, paint_6_stroke);
+    paint6Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint6Stroke.strokeCap = StrokeCap.round;
+    paint6Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_6, paint6Stroke);
 
-    Paint paint_6_fill = Paint()..style = PaintingStyle.fill;
-    paint_6_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_6, paint_6_fill);
+    Paint paint6Fill = Paint()..style = PaintingStyle.fill;
+    paint6Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_6, paint6Fill);
 
     Path path_7 = Path();
     path_7.moveTo(size.width * 0.3564367, size.height * 0.4683246);
@@ -223,17 +225,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.4424104,
         size.height * 0.4140393);
 
-    Paint paint_7_stroke = Paint()
+    Paint paint7Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_7_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_7_stroke.strokeCap = StrokeCap.round;
-    paint_7_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_7, paint_7_stroke);
+    paint7Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint7Stroke.strokeCap = StrokeCap.round;
+    paint7Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_7, paint7Stroke);
 
-    Paint paint_7_fill = Paint()..style = PaintingStyle.fill;
-    paint_7_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_7, paint_7_fill);
+    Paint paint7Fill = Paint()..style = PaintingStyle.fill;
+    paint7Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_7, paint7Fill);
 
     Path path_8 = Path();
     path_8.moveTo(size.width * 0.4648884, size.height * 0.4077827);
@@ -245,17 +247,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.4918446,
         size.height * 0.4034398);
 
-    Paint paint_8_stroke = Paint()
+    Paint paint8Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_8_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_8_stroke.strokeCap = StrokeCap.round;
-    paint_8_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_8, paint_8_stroke);
+    paint8Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint8Stroke.strokeCap = StrokeCap.round;
+    paint8Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_8, paint8Stroke);
 
-    Paint paint_8_fill = Paint()..style = PaintingStyle.fill;
-    paint_8_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_8, paint_8_fill);
+    Paint paint8Fill = Paint()..style = PaintingStyle.fill;
+    paint8Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_8, paint8Fill);
 
     Path path_9 = Path();
     path_9.moveTo(size.width * 0.6799044, size.height * 0.3370550);
@@ -360,17 +362,17 @@ class GreenBadge extends CustomPainter {
     path_9.lineTo(size.width * 0.6799044, size.height * 0.3370550);
     path_9.close();
 
-    Paint paint_9_stroke = Paint()
+    Paint paint9Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_9_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_9_stroke.strokeCap = StrokeCap.round;
-    paint_9_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_9, paint_9_stroke);
+    paint9Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint9Stroke.strokeCap = StrokeCap.round;
+    paint9Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_9, paint9Stroke);
 
-    Paint paint_9_fill = Paint()..style = PaintingStyle.fill;
-    paint_9_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_9, paint_9_fill);
+    Paint paint9Fill = Paint()..style = PaintingStyle.fill;
+    paint9Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_9, paint9Fill);
 
     Path path_10 = Path();
     path_10.moveTo(size.width * 0.4364382, size.height * 0.3692644);
@@ -382,17 +384,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.5896056,
         size.height * 0.3512723);
 
-    Paint paint_10_stroke = Paint()
+    Paint paint10Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_10_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_10_stroke.strokeCap = StrokeCap.round;
-    paint_10_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_10, paint_10_stroke);
+    paint10Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint10Stroke.strokeCap = StrokeCap.round;
+    paint10Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_10, paint10Stroke);
 
-    Paint paint_10_fill = Paint()..style = PaintingStyle.fill;
-    paint_10_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_10, paint_10_fill);
+    Paint paint10Fill = Paint()..style = PaintingStyle.fill;
+    paint10Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_10, paint10Fill);
 
     Path path_11 = Path();
     path_11.moveTo(size.width * 0.6637131, size.height * 0.5571466);
@@ -404,17 +406,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.6020239,
         size.height * 0.4443848);
 
-    Paint paint_11_stroke = Paint()
+    Paint paint11Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_11_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_11_stroke.strokeCap = StrokeCap.round;
-    paint_11_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_11, paint_11_stroke);
+    paint11Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint11Stroke.strokeCap = StrokeCap.round;
+    paint11Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_11, paint11Stroke);
 
-    Paint paint_11_fill = Paint()..style = PaintingStyle.fill;
-    paint_11_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_11, paint_11_fill);
+    Paint paint11Fill = Paint()..style = PaintingStyle.fill;
+    paint11Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_11, paint11Fill);
 
     Path path_12 = Path();
     path_12.moveTo(size.width * 0.4615857, size.height * 0.3610969);
@@ -433,17 +435,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.4727450,
         size.height * 0.3758822);
 
-    Paint paint_12_stroke = Paint()
+    Paint paint12Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_12_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_12_stroke.strokeCap = StrokeCap.round;
-    paint_12_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_12, paint_12_stroke);
+    paint12Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint12Stroke.strokeCap = StrokeCap.round;
+    paint12Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_12, paint12Stroke);
 
-    Paint paint_12_fill = Paint()..style = PaintingStyle.fill;
-    paint_12_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_12, paint_12_fill);
+    Paint paint12Fill = Paint()..style = PaintingStyle.fill;
+    paint12Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_12, paint12Fill);
 
     Path path_13 = Path();
     path_13.moveTo(size.width * 0.4860279, size.height * 0.3499293);
@@ -462,17 +464,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.4953028,
         size.height * 0.3783115);
 
-    Paint paint_13_stroke = Paint()
+    Paint paint13Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_13_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_13_stroke.strokeCap = StrokeCap.round;
-    paint_13_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_13, paint_13_stroke);
+    paint13Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint13Stroke.strokeCap = StrokeCap.round;
+    paint13Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_13, paint13Stroke);
 
-    Paint paint_13_fill = Paint()..style = PaintingStyle.fill;
-    paint_13_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_13, paint_13_fill);
+    Paint paint13Fill = Paint()..style = PaintingStyle.fill;
+    paint13Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_13, paint13Fill);
 
     Path path_14 = Path();
     path_14.moveTo(size.width * 0.5223347, size.height * 0.3391230);
@@ -491,17 +493,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.5304303,
         size.height * 0.3733482);
 
-    Paint paint_14_stroke = Paint()
+    Paint paint14Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_14_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_14_stroke.strokeCap = StrokeCap.round;
-    paint_14_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_14, paint_14_stroke);
+    paint14Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint14Stroke.strokeCap = StrokeCap.round;
+    paint14Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_14, paint14Stroke);
 
-    Paint paint_14_fill = Paint()..style = PaintingStyle.fill;
-    paint_14_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_14, paint_14_fill);
+    Paint paint14Fill = Paint()..style = PaintingStyle.fill;
+    paint14Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_14, paint14Fill);
 
     Path path_15 = Path();
     path_15.moveTo(size.width * 0.6276454, size.height * 0.5493403);
@@ -520,17 +522,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.6545219,
         size.height * 0.5402408);
 
-    Paint paint_15_stroke = Paint()
+    Paint paint15Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_15_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_15_stroke.strokeCap = StrokeCap.round;
-    paint_15_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_15, paint_15_stroke);
+    paint15Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint15Stroke.strokeCap = StrokeCap.round;
+    paint15Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_15, paint15Stroke);
 
-    Paint paint_15_fill = Paint()..style = PaintingStyle.fill;
-    paint_15_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_15, paint_15_fill);
+    Paint paint15Fill = Paint()..style = PaintingStyle.fill;
+    paint15Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_15, paint15Fill);
 
     Path path_16 = Path();
     path_16.moveTo(size.width * 0.6011594, size.height * 0.5338796);
@@ -549,17 +551,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.6606494,
         size.height * 0.5191963);
 
-    Paint paint_16_stroke = Paint()
+    Paint paint16Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_16_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_16_stroke.strokeCap = StrokeCap.round;
-    paint_16_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_16, paint_16_stroke);
+    paint16Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint16Stroke.strokeCap = StrokeCap.round;
+    paint16Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_16, paint16Stroke);
 
-    Paint paint_16_fill = Paint()..style = PaintingStyle.fill;
-    paint_16_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_16, paint_16_fill);
+    Paint paint16Fill = Paint()..style = PaintingStyle.fill;
+    paint16Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_16, paint16Fill);
 
     Path path_17 = Path();
     path_17.moveTo(size.width * 0.5878765, size.height * 0.5076675);
@@ -578,17 +580,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.6564064,
         size.height * 0.4959319);
 
-    Paint paint_17_stroke = Paint()
+    Paint paint17Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_17_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_17_stroke.strokeCap = StrokeCap.round;
-    paint_17_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_17, paint_17_stroke);
+    paint17Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint17Stroke.strokeCap = StrokeCap.round;
+    paint17Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_17, paint17Stroke);
 
-    Paint paint_17_fill = Paint()..style = PaintingStyle.fill;
-    paint_17_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_17, paint_17_fill);
+    Paint paint17Fill = Paint()..style = PaintingStyle.fill;
+    paint17Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_17, paint17Fill);
 
     Path path_18 = Path();
     path_18.moveTo(size.width * 0.6533426, size.height * 0.3611990);
@@ -600,17 +602,17 @@ class GreenBadge extends CustomPainter {
         size.width * 0.6854064,
         size.height * 0.3474476);
 
-    Paint paint_18_stroke = Paint()
+    Paint paint18Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_18_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_18_stroke.strokeCap = StrokeCap.round;
-    paint_18_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_18, paint_18_stroke);
+    paint18Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint18Stroke.strokeCap = StrokeCap.round;
+    paint18Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_18, paint18Stroke);
 
-    Paint paint_18_fill = Paint()..style = PaintingStyle.fill;
-    paint_18_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_18, paint_18_fill);
+    Paint paint18Fill = Paint()..style = PaintingStyle.fill;
+    paint18Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_18, paint18Fill);
 
     Path path_19 = Path();
     path_19.moveTo(size.width * 0.4659880, size.height * 0.4321335);
@@ -651,9 +653,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.4321335);
     path_19.close();
 
-    Paint paint_19_fill = Paint()..style = PaintingStyle.fill;
-    paint_19_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_19, paint_19_fill);
+    Paint paint19Fill = Paint()..style = PaintingStyle.fill;
+    paint19Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_19, paint19Fill);
 
     Path path_20 = Path();
     path_20.moveTo(size.width * 0.5826135, size.height * 0.3920131);
@@ -673,9 +675,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.3920131);
     path_20.close();
 
-    Paint paint_20_fill = Paint()..style = PaintingStyle.fill;
-    paint_20_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_20, paint_20_fill);
+    Paint paint20Fill = Paint()..style = PaintingStyle.fill;
+    paint20Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_20, paint20Fill);
 
     Path path_21 = Path();
     path_21.moveTo(size.width * 0.4509004, size.height * 0.2268414);
@@ -1339,9 +1341,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.2367131);
     path_21.close();
 
-    Paint paint_21_fill = Paint()..style = PaintingStyle.fill;
-    paint_21_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_21, paint_21_fill);
+    Paint paint21Fill = Paint()..style = PaintingStyle.fill;
+    paint21Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_21, paint21Fill);
 
     Path path_22 = Path();
     path_22.moveTo(size.width * 0.3475757, size.height * 0.2746021);
@@ -2369,9 +2371,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.2863874);
     path_22.close();
 
-    Paint paint_22_fill = Paint()..style = PaintingStyle.fill;
-    paint_22_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_22, paint_22_fill);
+    Paint paint22Fill = Paint()..style = PaintingStyle.fill;
+    paint22Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_22, paint22Fill);
 
     Path path_23 = Path();
     path_23.moveTo(size.width * 0.2028633, size.height * 0.3001990);
@@ -2393,9 +2395,9 @@ class GreenBadge extends CustomPainter {
     path_23.lineTo(size.width * 0.1364203, size.height * 0.2488696);
     path_23.close();
 
-    Paint paint_23_fill = Paint()..style = PaintingStyle.fill;
-    paint_23_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_23, paint_23_fill);
+    Paint paint23Fill = Paint()..style = PaintingStyle.fill;
+    paint23Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_23, paint23Fill);
 
     Path path_24 = Path();
     path_24.moveTo(size.width * 0.2292912, size.height * 0.2422953);
@@ -2520,9 +2522,9 @@ class GreenBadge extends CustomPainter {
     path_24.lineTo(size.width * 0.1595215, size.height * 0.2154306);
     path_24.close();
 
-    Paint paint_24_fill = Paint()..style = PaintingStyle.fill;
-    paint_24_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_24, paint_24_fill);
+    Paint paint24Fill = Paint()..style = PaintingStyle.fill;
+    paint24Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_24, paint24Fill);
 
     Path path_25 = Path();
     path_25.moveTo(size.width * 0.3084466, size.height * 0.1779668);
@@ -2618,9 +2620,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.1779668);
     path_25.close();
 
-    Paint paint_25_fill = Paint()..style = PaintingStyle.fill;
-    paint_25_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_25, paint_25_fill);
+    Paint paint25Fill = Paint()..style = PaintingStyle.fill;
+    paint25Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_25, paint25Fill);
 
     Path path_26 = Path();
     path_26.moveTo(size.width * 0.3777343, size.height * 0.1479979);
@@ -2630,9 +2632,9 @@ class GreenBadge extends CustomPainter {
     path_26.lineTo(size.width * 0.3777343, size.height * 0.1479979);
     path_26.close();
 
-    Paint paint_26_fill = Paint()..style = PaintingStyle.fill;
-    paint_26_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_26, paint_26_fill);
+    Paint paint26Fill = Paint()..style = PaintingStyle.fill;
+    paint26Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_26, paint26Fill);
 
     Path path_27 = Path();
     path_27.moveTo(size.width * 0.4426574, size.height * 0.1344741);
@@ -2648,9 +2650,9 @@ class GreenBadge extends CustomPainter {
     path_27.lineTo(size.width * 0.4609124, size.height * 0.07709450);
     path_27.close();
 
-    Paint paint_27_fill = Paint()..style = PaintingStyle.fill;
-    paint_27_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_27, paint_27_fill);
+    Paint paint27Fill = Paint()..style = PaintingStyle.fill;
+    paint27Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_27, paint27Fill);
 
     Path path_28 = Path();
     path_28.moveTo(size.width * 0.5628088, size.height * 0.1364225);
@@ -2816,9 +2818,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.1364225);
     path_28.close();
 
-    Paint paint_28_fill = Paint()..style = PaintingStyle.fill;
-    paint_28_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_28, paint_28_fill);
+    Paint paint28Fill = Paint()..style = PaintingStyle.fill;
+    paint28Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_28, paint28Fill);
 
     Path path_29 = Path();
     path_29.moveTo(size.width * 0.6410916, size.height * 0.1542416);
@@ -2828,9 +2830,9 @@ class GreenBadge extends CustomPainter {
     path_29.lineTo(size.width * 0.6410916, size.height * 0.1542416);
     path_29.close();
 
-    Paint paint_29_fill = Paint()..style = PaintingStyle.fill;
-    paint_29_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_29, paint_29_fill);
+    Paint paint29Fill = Paint()..style = PaintingStyle.fill;
+    paint29Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_29, paint29Fill);
 
     Path path_30 = Path();
     path_30.moveTo(size.width * 0.6917291, size.height * 0.1770707);
@@ -2932,9 +2934,9 @@ class GreenBadge extends CustomPainter {
     path_30.lineTo(size.width * 0.6717251, size.height * 0.1660045);
     path_30.close();
 
-    Paint paint_30_fill = Paint()..style = PaintingStyle.fill;
-    paint_30_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_30, paint_30_fill);
+    Paint paint30Fill = Paint()..style = PaintingStyle.fill;
+    paint30Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_30, paint30Fill);
 
     Path path_31 = Path();
     path_31.moveTo(size.width * 0.7471036, size.height * 0.2165921);
@@ -2962,9 +2964,9 @@ class GreenBadge extends CustomPainter {
     path_31.lineTo(size.width * 0.8487968, size.height * 0.2248992);
     path_31.close();
 
-    Paint paint_31_fill = Paint()..style = PaintingStyle.fill;
-    paint_31_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_31, paint_31_fill);
+    Paint paint31Fill = Paint()..style = PaintingStyle.fill;
+    paint31Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_31, paint31Fill);
 
     Path path_32 = Path();
     path_32.moveTo(size.width * 0.7873028, size.height * 0.2713796);
@@ -3089,9 +3091,9 @@ class GreenBadge extends CustomPainter {
     path_32.lineTo(size.width * 0.8663625, size.height * 0.2602003);
     path_32.close();
 
-    Paint paint_32_fill = Paint()..style = PaintingStyle.fill;
-    paint_32_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_32, paint_32_fill);
+    Paint paint32Fill = Paint()..style = PaintingStyle.fill;
+    paint32Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_32, paint32Fill);
 
     Path path_33 = Path();
     path_33.moveTo(size.width * 0.1180554, size.height * 0.7549110);
@@ -3119,9 +3121,9 @@ class GreenBadge extends CustomPainter {
     path_33.lineTo(size.width * 0.1180554, size.height * 0.7549110);
     path_33.close();
 
-    Paint paint_33_fill = Paint()..style = PaintingStyle.fill;
-    paint_33_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_33, paint_33_fill);
+    Paint paint33Fill = Paint()..style = PaintingStyle.fill;
+    paint33Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_33, paint33Fill);
 
     Path path_34 = Path();
     path_34.moveTo(size.width * 0.1384841, size.height * 0.7871047);
@@ -3143,9 +3145,9 @@ class GreenBadge extends CustomPainter {
     path_34.lineTo(size.width * 0.1573179, size.height * 0.7991492);
     path_34.close();
 
-    Paint paint_34_fill = Paint()..style = PaintingStyle.fill;
-    paint_34_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_34, paint_34_fill);
+    Paint paint34Fill = Paint()..style = PaintingStyle.fill;
+    paint34Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_34, paint34Fill);
 
     Path path_35 = Path();
     path_35.moveTo(size.width * 0.1680610, size.height * 0.8200000);
@@ -3247,9 +3249,9 @@ class GreenBadge extends CustomPainter {
     path_35.lineTo(size.width * 0.1627629, size.height * 0.8149476);
     path_35.close();
 
-    Paint paint_35_fill = Paint()..style = PaintingStyle.fill;
-    paint_35_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_35, paint_35_fill);
+    Paint paint35Fill = Paint()..style = PaintingStyle.fill;
+    paint35Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_35, paint35Fill);
 
     Path path_36 = Path();
     path_36.moveTo(size.width * 0.1888378, size.height * 0.8381702);
@@ -3277,9 +3279,9 @@ class GreenBadge extends CustomPainter {
     path_36.lineTo(size.width * 0.2253948, size.height * 0.8371152);
     path_36.close();
 
-    Paint paint_36_fill = Paint()..style = PaintingStyle.fill;
-    paint_36_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_36, paint_36_fill);
+    Paint paint36Fill = Paint()..style = PaintingStyle.fill;
+    paint36Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_36, paint36Fill);
 
     Path path_37 = Path();
     path_37.moveTo(size.width * 0.2308287, size.height * 0.8670419);
@@ -3307,9 +3309,9 @@ class GreenBadge extends CustomPainter {
     path_37.lineTo(size.width * 0.2308287, size.height * 0.8670419);
     path_37.close();
 
-    Paint paint_37_fill = Paint()..style = PaintingStyle.fill;
-    paint_37_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_37, paint_37_fill);
+    Paint paint37Fill = Paint()..style = PaintingStyle.fill;
+    paint37Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_37, paint37Fill);
 
     Path path_38 = Path();
     path_38.moveTo(size.width * 0.2715964, size.height * 0.8881204);
@@ -3319,9 +3321,9 @@ class GreenBadge extends CustomPainter {
     path_38.lineTo(size.width * 0.2715964, size.height * 0.8881204);
     path_38.close();
 
-    Paint paint_38_fill = Paint()..style = PaintingStyle.fill;
-    paint_38_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_38, paint_38_fill);
+    Paint paint38Fill = Paint()..style = PaintingStyle.fill;
+    paint38Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_38, paint38Fill);
 
     Path path_39 = Path();
     path_39.moveTo(size.width * 0.2952004, size.height * 0.8980864);
@@ -3337,9 +3339,9 @@ class GreenBadge extends CustomPainter {
     path_39.lineTo(size.width * 0.3216454, size.height * 0.8864346);
     path_39.close();
 
-    Paint paint_39_fill = Paint()..style = PaintingStyle.fill;
-    paint_39_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_39, paint_39_fill);
+    Paint paint39Fill = Paint()..style = PaintingStyle.fill;
+    paint39Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_39, paint39Fill);
 
     Path path_40 = Path();
     path_40.moveTo(size.width * 0.3444367, size.height * 0.9146178);
@@ -3361,9 +3363,9 @@ class GreenBadge extends CustomPainter {
     path_40.lineTo(size.width * 0.3470637, size.height * 0.9048822);
     path_40.close();
 
-    Paint paint_40_fill = Paint()..style = PaintingStyle.fill;
-    paint_40_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_40, paint_40_fill);
+    Paint paint40Fill = Paint()..style = PaintingStyle.fill;
+    paint40Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_40, paint40Fill);
 
     Path path_41 = Path();
     path_41.moveTo(size.width * 0.3775554, size.height * 0.9224372);
@@ -3390,9 +3392,9 @@ class GreenBadge extends CustomPainter {
     path_41.lineTo(size.width * 0.3775554, size.height * 0.9224372);
     path_41.close();
 
-    Paint paint_41_fill = Paint()..style = PaintingStyle.fill;
-    paint_41_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_41, paint_41_fill);
+    Paint paint41Fill = Paint()..style = PaintingStyle.fill;
+    paint41Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_41, paint41Fill);
 
     Path path_42 = Path();
     path_42.moveTo(size.width * 0.4017729, size.height * 0.9272696);
@@ -3568,9 +3570,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.9222461);
     path_42.close();
 
-    Paint paint_42_fill = Paint()..style = PaintingStyle.fill;
-    paint_42_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_42, paint_42_fill);
+    Paint paint42Fill = Paint()..style = PaintingStyle.fill;
+    paint42Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_42, paint42Fill);
 
     Path path_43 = Path();
     path_43.moveTo(size.width * 0.4438088, size.height * 0.9326754);
@@ -3746,9 +3748,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.9275471);
     path_43.close();
 
-    Paint paint_43_fill = Paint()..style = PaintingStyle.fill;
-    paint_43_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_43, paint_43_fill);
+    Paint paint43Fill = Paint()..style = PaintingStyle.fill;
+    paint43Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_43, paint43Fill);
 
     Path path_44 = Path();
     path_44.moveTo(size.width * 0.5006135, size.height * 0.9353377);
@@ -4046,9 +4048,9 @@ class GreenBadge extends CustomPainter {
     path_44.lineTo(size.width * 0.4775896, size.height * 0.9345497);
     path_44.close();
 
-    Paint paint_44_fill = Paint()..style = PaintingStyle.fill;
-    paint_44_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_44, paint_44_fill);
+    Paint paint44Fill = Paint()..style = PaintingStyle.fill;
+    paint44Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_44, paint44Fill);
 
     Path path_45 = Path();
     path_45.moveTo(size.width * 0.5368327, size.height * 0.9338141);
@@ -4070,9 +4072,9 @@ class GreenBadge extends CustomPainter {
     path_45.lineTo(size.width * 0.5368327, size.height * 0.9338141);
     path_45.close();
 
-    Paint paint_45_fill = Paint()..style = PaintingStyle.fill;
-    paint_45_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_45, paint_45_fill);
+    Paint paint45Fill = Paint()..style = PaintingStyle.fill;
+    paint45Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_45, paint45Fill);
 
     Path path_46 = Path();
     path_46.moveTo(size.width * 0.5781195, size.height * 0.9299503);
@@ -4094,9 +4096,9 @@ class GreenBadge extends CustomPainter {
     path_46.lineTo(size.width * 0.6007251, size.height * 0.9211283);
     path_46.close();
 
-    Paint paint_46_fill = Paint()..style = PaintingStyle.fill;
-    paint_46_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_46, paint_46_fill);
+    Paint paint46Fill = Paint()..style = PaintingStyle.fill;
+    paint46Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_46, paint46Fill);
 
     Path path_47 = Path();
     path_47.moveTo(size.width * 0.6361793, size.height * 0.9192199);
@@ -4112,9 +4114,9 @@ class GreenBadge extends CustomPainter {
     path_47.lineTo(size.width * 0.6393386, size.height * 0.8983874);
     path_47.close();
 
-    Paint paint_47_fill = Paint()..style = PaintingStyle.fill;
-    paint_47_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_47, paint_47_fill);
+    Paint paint47Fill = Paint()..style = PaintingStyle.fill;
+    paint47Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_47, paint47Fill);
 
     Path path_48 = Path();
     path_48.moveTo(size.width * 0.6712709, size.height * 0.9099791);
@@ -4210,9 +4212,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.9099791);
     path_48.close();
 
-    Paint paint_48_fill = Paint()..style = PaintingStyle.fill;
-    paint_48_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_48, paint_48_fill);
+    Paint paint48Fill = Paint()..style = PaintingStyle.fill;
+    paint48Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_48, paint48Fill);
 
     Path path_49 = Path();
     path_49.moveTo(size.width * 0.7011355, size.height * 0.8993377);
@@ -4337,9 +4339,9 @@ class GreenBadge extends CustomPainter {
     path_49.lineTo(size.width * 0.6861434, size.height * 0.8831204);
     path_49.close();
 
-    Paint paint_49_fill = Paint()..style = PaintingStyle.fill;
-    paint_49_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_49, paint_49_fill);
+    Paint paint49Fill = Paint()..style = PaintingStyle.fill;
+    paint49Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_49, paint49Fill);
 
     Path path_50 = Path();
     path_50.moveTo(size.width * 0.7348327, size.height * 0.8850340);
@@ -4361,9 +4363,9 @@ class GreenBadge extends CustomPainter {
     path_50.lineTo(size.width * 0.7498048, size.height * 0.8708272);
     path_50.close();
 
-    Paint paint_50_fill = Paint()..style = PaintingStyle.fill;
-    paint_50_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_50, paint_50_fill);
+    Paint paint50Fill = Paint()..style = PaintingStyle.fill;
+    paint50Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_50, paint50Fill);
 
     Path path_51 = Path();
     path_51.moveTo(size.width * 0.7719960, size.height * 0.8649948);
@@ -4379,9 +4381,9 @@ class GreenBadge extends CustomPainter {
     path_51.lineTo(size.width * 0.7876175, size.height * 0.8552513);
     path_51.close();
 
-    Paint paint_51_fill = Paint()..style = PaintingStyle.fill;
-    paint_51_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_51, paint_51_fill);
+    Paint paint51Fill = Paint()..style = PaintingStyle.fill;
+    paint51Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_51, paint51Fill);
 
     Path path_52 = Path();
     path_52.moveTo(size.width * 0.8053506, size.height * 0.8422880);
@@ -4403,9 +4405,9 @@ class GreenBadge extends CustomPainter {
     path_52.lineTo(size.width * 0.7974900, size.height * 0.8187749);
     path_52.close();
 
-    Paint paint_52_fill = Paint()..style = PaintingStyle.fill;
-    paint_52_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_52, paint_52_fill);
+    Paint paint52Fill = Paint()..style = PaintingStyle.fill;
+    paint52Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_52, paint52Fill);
 
     Path path_53 = Path();
     path_53.moveTo(size.width * 0.8287131, size.height * 0.8225654);
@@ -4530,9 +4532,9 @@ class GreenBadge extends CustomPainter {
     path_53.lineTo(size.width * 0.8048008, size.height * 0.8119267);
     path_53.close();
 
-    Paint paint_53_fill = Paint()..style = PaintingStyle.fill;
-    paint_53_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_53, paint_53_fill);
+    Paint paint53Fill = Paint()..style = PaintingStyle.fill;
+    paint53Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_53, paint53Fill);
 
     Path path_54 = Path();
     path_54.moveTo(size.width * 0.8556773, size.height * 0.7944058);
@@ -4628,9 +4630,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.7944058);
     path_54.close();
 
-    Paint paint_54_fill = Paint()..style = PaintingStyle.fill;
-    paint_54_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_54, paint_54_fill);
+    Paint paint54Fill = Paint()..style = PaintingStyle.fill;
+    paint54Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_54, paint54Fill);
 
     Path path_55 = Path();
     path_55.moveTo(size.width * 0.8698446, size.height * 0.7742801);
@@ -4640,9 +4642,9 @@ class GreenBadge extends CustomPainter {
     path_55.lineTo(size.width * 0.8698446, size.height * 0.7742801);
     path_55.close();
 
-    Paint paint_55_fill = Paint()..style = PaintingStyle.fill;
-    paint_55_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_55, paint_55_fill);
+    Paint paint55Fill = Paint()..style = PaintingStyle.fill;
+    paint55Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_55, paint55Fill);
 
     Path path_56 = Path();
     path_56.moveTo(size.width * 0.8799681, size.height * 0.7571414);
@@ -4658,9 +4660,9 @@ class GreenBadge extends CustomPainter {
     path_56.lineTo(size.width * 0.8573665, size.height * 0.7423848);
     path_56.close();
 
-    Paint paint_56_fill = Paint()..style = PaintingStyle.fill;
-    paint_56_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_56, paint_56_fill);
+    Paint paint56Fill = Paint()..style = PaintingStyle.fill;
+    paint56Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    canvas.drawPath(path_56, paint56Fill);
 
     Path path_57 = Path();
     path_57.moveTo(size.width * 0.1088769, size.height * 0.6569948);
@@ -5200,9 +5202,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.6447225);
     path_57.close();
 
-    Paint paint_57_fill = Paint()..style = PaintingStyle.fill;
-    paint_57_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_57, paint_57_fill);
+    Paint paint57Fill = Paint()..style = PaintingStyle.fill;
+    paint57Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_57, paint57Fill);
 
     Path path_58 = Path();
     path_58.moveTo(size.width * 0.1235861, size.height * 0.7084450);
@@ -5351,9 +5353,9 @@ class GreenBadge extends CustomPainter {
     path_58.lineTo(size.width * 0.1732952, size.height * 0.7084450);
     path_58.close();
 
-    Paint paint_58_fill = Paint()..style = PaintingStyle.fill;
-    paint_58_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_58, paint_58_fill);
+    Paint paint58Fill = Paint()..style = PaintingStyle.fill;
+    paint58Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_58, paint58Fill);
 
     Path path_59 = Path();
     path_59.moveTo(size.width * 0.8179004, size.height * 0.6469215);
@@ -5594,9 +5596,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.6535183);
     path_59.close();
 
-    Paint paint_59_fill = Paint()..style = PaintingStyle.fill;
-    paint_59_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_59, paint_59_fill);
+    Paint paint59Fill = Paint()..style = PaintingStyle.fill;
+    paint59Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_59, paint59Fill);
 
     Path path_60 = Path();
     path_60.moveTo(size.width * 0.8287610, size.height * 0.7088010);
@@ -6113,9 +6115,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.7523743);
     path_60.close();
 
-    Paint paint_60_fill = Paint()..style = PaintingStyle.fill;
-    paint_60_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_60, paint_60_fill);
+    Paint paint60Fill = Paint()..style = PaintingStyle.fill;
+    paint60Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_60, paint60Fill);
 
     Path path_61 = Path();
     path_61.moveTo(size.width * 0.3868566, size.height * 0.7471466);
@@ -6750,9 +6752,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.7276073);
     path_61.close();
 
-    Paint paint_61_fill = Paint()..style = PaintingStyle.fill;
-    paint_61_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_61, paint_61_fill);
+    Paint paint61Fill = Paint()..style = PaintingStyle.fill;
+    paint61Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_61, paint61Fill);
 
     Path path_62 = Path();
     path_62.moveTo(size.width * 0.4178287, size.height * 0.8087984);
@@ -7226,9 +7228,9 @@ class GreenBadge extends CustomPainter {
         size.height * 0.8072042);
     path_62.close();
 
-    Paint paint_62_fill = Paint()..style = PaintingStyle.fill;
-    paint_62_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_62, paint_62_fill);
+    Paint paint62Fill = Paint()..style = PaintingStyle.fill;
+    paint62Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_62, paint62Fill);
   }
 
   @override

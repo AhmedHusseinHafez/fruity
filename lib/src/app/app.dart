@@ -1,11 +1,9 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:musicplayer/src/app/gen_localization/l10n.dart';
 import 'package:musicplayer/src/resources/constants.dart';
 import 'package:musicplayer/src/resources/route_manager.dart';
-import 'package:musicplayer/src/resources/theme_manager.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 

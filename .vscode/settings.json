@@ -5,6 +5,7 @@
         "greenbadge",
         "musicplayer",
         "purplebadge",
-        "redbadge"
+        "redbadge",
+        "vsync"
     ]
 }

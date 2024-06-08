@@ -37,9 +37,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.9976387);
     path_0.close();
 
-    Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_0, paint_0_fill);
+    Paint paint0Fill = Paint()..style = PaintingStyle.fill;
+    paint0Fill.color = Colors.white.withOpacity(1.0);
+    paint0Fill.blendMode = BlendMode.overlay;
+    canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
     path_1.moveTo(size.width * 0.9453108, size.height * 0.3280079);
@@ -75,41 +76,44 @@ class PurpleBadge extends CustomPainter {
     path_1.lineTo(size.width * 0.9453108, size.height * 0.3280079);
     path_1.close();
 
-    Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
-    paint_1_fill.color = Color(0xffE3E3FF).withOpacity(1.0);
-    canvas.drawPath(path_1, paint_1_fill);
+    Paint paint1Fill = Paint()..style = PaintingStyle.fill;
+    paint1Fill.color = const Color(0xffE3E3FF).withOpacity(1.0);
+    paint1Fill.blendMode = BlendMode.modulate;
+    canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
     path_2.moveTo(size.width * 0.1360116, size.height * 0.3453272);
     path_2.lineTo(size.width * 0.1360116, size.height * 0.6130340);
 
-    Paint paint_2_stroke = Paint()
+    Paint paint2Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.007868446;
-    paint_2_stroke.color = Color(0xff8A79F3).withOpacity(1.0);
-    paint_2_stroke.strokeCap = StrokeCap.round;
-    paint_2_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_2, paint_2_stroke);
+    paint2Stroke.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint2Stroke.blendMode = BlendMode.multiply;
+    paint2Stroke.strokeCap = StrokeCap.round;
+    paint2Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_2, paint2Stroke);
 
-    Paint paint_2_fill = Paint()..style = PaintingStyle.fill;
-    paint_2_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_2, paint_2_fill);
+    Paint paint2Fill = Paint()..style = PaintingStyle.fill;
+    paint2Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_2, paint2Fill);
 
     Path path_3 = Path();
     path_3.moveTo(size.width * 0.8653865, size.height * 0.3453272);
     path_3.lineTo(size.width * 0.8653865, size.height * 0.6130340);
 
-    Paint paint_3_stroke = Paint()
+    Paint paint3Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.007868446;
-    paint_3_stroke.color = Color(0xff8A79F3).withOpacity(1.0);
-    paint_3_stroke.strokeCap = StrokeCap.round;
-    paint_3_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_3, paint_3_stroke);
+    paint3Stroke.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint3Stroke.blendMode = BlendMode.multiply;
+    paint3Stroke.strokeCap = StrokeCap.round;
+    paint3Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_3, paint3Stroke);
 
-    Paint paint_3_fill = Paint()..style = PaintingStyle.fill;
-    paint_3_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_3, paint_3_fill);
+    Paint paint3Fill = Paint()..style = PaintingStyle.fill;
+    paint3Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_3, paint3Fill);
 
     Path path_4 = Path();
     path_4.moveTo(size.width * 0.1730271, size.height * 0.5468063);
@@ -157,17 +161,18 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.5468063);
     path_4.close();
 
-    Paint paint_4_stroke = Paint()
+    Paint paint4Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_4_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_4_stroke.strokeCap = StrokeCap.round;
-    paint_4_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_4, paint_4_stroke);
+    paint4Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint4Stroke.strokeCap = StrokeCap.round;
+    paint4Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_4, paint4Stroke);
 
-    Paint paint_4_fill = Paint()..style = PaintingStyle.fill;
-    paint_4_fill.color = Color(0xff048C3D).withOpacity(1.0);
-    canvas.drawPath(path_4, paint_4_fill);
+    Paint paint4Fill = Paint()..style = PaintingStyle.fill;
+    paint4Fill.color = const Color(0xff048C3D).withOpacity(1.0);
+    paint4Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_4, paint4Fill);
 
     Path path_5 = Path();
     path_5.moveTo(size.width * 0.1931454, size.height * 0.5247304);
@@ -200,17 +205,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.2830498,
         size.height * 0.5789634);
 
-    Paint paint_5_stroke = Paint()
+    Paint paint5Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_5_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_5_stroke.strokeCap = StrokeCap.round;
-    paint_5_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_5, paint_5_stroke);
+    paint5Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint5Stroke.strokeCap = StrokeCap.round;
+    paint5Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_5, paint5Stroke);
 
-    Paint paint_5_fill = Paint()..style = PaintingStyle.fill;
-    paint_5_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_5, paint_5_fill);
+    Paint paint5Fill = Paint()..style = PaintingStyle.fill;
+    paint5Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_5, paint5Fill);
 
     Path path_6 = Path();
     path_6.moveTo(size.width * 0.5573227, size.height * 0.3602696);
@@ -230,17 +235,18 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.3602696);
     path_6.close();
 
-    Paint paint_6_stroke = Paint()
+    Paint paint6Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_6_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_6_stroke.strokeCap = StrokeCap.round;
-    paint_6_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_6, paint_6_stroke);
+    paint6Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint6Stroke.strokeCap = StrokeCap.round;
+    paint6Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_6, paint6Stroke);
 
-    Paint paint_6_fill = Paint()..style = PaintingStyle.fill;
-    paint_6_fill.color = Color(0xffF3D579).withOpacity(1.0);
-    canvas.drawPath(path_6, paint_6_fill);
+    Paint paint6Fill = Paint()..style = PaintingStyle.fill;
+    paint6Fill.color = const Color(0xffF3D579).withOpacity(1.0);
+    paint6Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_6, paint6Fill);
 
     Path path_7 = Path();
     path_7.moveTo(size.width * 0.5954382, size.height * 0.4122277);
@@ -252,17 +258,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6526494,
         size.height * 0.3906702);
 
-    Paint paint_7_stroke = Paint()
+    Paint paint7Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_7_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_7_stroke.strokeCap = StrokeCap.round;
-    paint_7_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_7, paint_7_stroke);
+    paint7Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint7Stroke.strokeCap = StrokeCap.round;
+    paint7Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_7, paint7Stroke);
 
-    Paint paint_7_fill = Paint()..style = PaintingStyle.fill;
-    paint_7_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_7, paint_7_fill);
+    Paint paint7Fill = Paint()..style = PaintingStyle.fill;
+    paint7Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_7, paint7Fill);
 
     Path path_8 = Path();
     path_8.moveTo(size.width * 0.6042390, size.height * 0.4039058);
@@ -274,17 +280,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6308805,
         size.height * 0.3971832);
 
-    Paint paint_8_stroke = Paint()
+    Paint paint8Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_8_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_8_stroke.strokeCap = StrokeCap.round;
-    paint_8_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_8, paint_8_stroke);
+    paint8Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint8Stroke.strokeCap = StrokeCap.round;
+    paint8Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_8, paint8Stroke);
 
-    Paint paint_8_fill = Paint()..style = PaintingStyle.fill;
-    paint_8_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_8, paint_8_fill);
+    Paint paint8Fill = Paint()..style = PaintingStyle.fill;
+    paint8Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_8, paint8Fill);
 
     Path path_9 = Path();
     path_9.moveTo(size.width * 0.5494622, size.height * 0.3890654);
@@ -296,17 +302,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5627450,
         size.height * 0.3648691);
 
-    Paint paint_9_stroke = Paint()
+    Paint paint9Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_9_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_9_stroke.strokeCap = StrokeCap.round;
-    paint_9_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_9, paint_9_stroke);
+    paint9Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint9Stroke.strokeCap = StrokeCap.round;
+    paint9Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_9, paint9Stroke);
 
-    Paint paint_9_fill = Paint()..style = PaintingStyle.fill;
-    paint_9_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_9, paint_9_fill);
+    Paint paint9Fill = Paint()..style = PaintingStyle.fill;
+    paint9Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_9, paint9Fill);
 
     Path path_10 = Path();
     path_10.moveTo(size.width * 0.5748446, size.height * 0.3578901);
@@ -318,17 +324,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5918207,
         size.height * 0.3543220);
 
-    Paint paint_10_stroke = Paint()
+    Paint paint10Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_10_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_10_stroke.strokeCap = StrokeCap.round;
-    paint_10_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_10, paint_10_stroke);
+    paint10Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint10Stroke.strokeCap = StrokeCap.round;
+    paint10Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_10, paint10Stroke);
 
-    Paint paint_10_fill = Paint()..style = PaintingStyle.fill;
-    paint_10_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_10, paint_10_fill);
+    Paint paint10Fill = Paint()..style = PaintingStyle.fill;
+    paint10Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_10, paint10Fill);
 
     Path path_11 = Path();
     path_11.moveTo(size.width * 0.6524104, size.height * 0.4019921);
@@ -348,17 +354,17 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.4019921);
     path_11.close();
 
-    Paint paint_11_stroke = Paint()
+    Paint paint11Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_11_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_11_stroke.strokeCap = StrokeCap.round;
-    paint_11_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_11, paint_11_stroke);
+    paint11Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint11Stroke.strokeCap = StrokeCap.round;
+    paint11Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_11, paint11Stroke);
 
-    Paint paint_11_fill = Paint()..style = PaintingStyle.fill;
-    paint_11_fill.color = Color(0xffF3D579).withOpacity(1.0);
-    canvas.drawPath(path_11, paint_11_fill);
+    Paint paint11Fill = Paint()..style = PaintingStyle.fill;
+    paint11Fill.color = const Color(0xffF3D579).withOpacity(1.0);
+    canvas.drawPath(path_11, paint11Fill);
 
     Path path_12 = Path();
     path_12.moveTo(size.width * 0.6364582, size.height * 0.4586545);
@@ -370,17 +376,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.7020000,
         size.height * 0.4635681);
 
-    Paint paint_12_stroke = Paint()
+    Paint paint12Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_12_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_12_stroke.strokeCap = StrokeCap.round;
-    paint_12_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_12, paint_12_stroke);
+    paint12Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint12Stroke.strokeCap = StrokeCap.round;
+    paint12Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_12, paint12Stroke);
 
-    Paint paint_12_fill = Paint()..style = PaintingStyle.fill;
-    paint_12_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_12, paint_12_fill);
+    Paint paint12Fill = Paint()..style = PaintingStyle.fill;
+    paint12Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_12, paint12Fill);
 
     Path path_13 = Path();
     path_13.moveTo(size.width * 0.6509960, size.height * 0.4553979);
@@ -392,17 +398,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6785020,
         size.height * 0.4603613);
 
-    Paint paint_13_stroke = Paint()
+    Paint paint13Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_13_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_13_stroke.strokeCap = StrokeCap.round;
-    paint_13_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_13, paint_13_stroke);
+    paint13Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint13Stroke.strokeCap = StrokeCap.round;
+    paint13Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_13, paint13Stroke);
 
-    Paint paint_13_fill = Paint()..style = PaintingStyle.fill;
-    paint_13_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_13, paint_13_fill);
+    Paint paint13Fill = Paint()..style = PaintingStyle.fill;
+    paint13Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_13, paint13Fill);
 
     Path path_14 = Path();
     path_14.moveTo(size.width * 0.6201912, size.height * 0.4221047);
@@ -414,17 +420,18 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6526494,
         size.height * 0.4077304);
 
-    Paint paint_14_stroke = Paint()
+    Paint paint14Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_14_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_14_stroke.strokeCap = StrokeCap.round;
-    paint_14_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_14, paint_14_stroke);
+    paint14Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint14Stroke.strokeCap = StrokeCap.round;
+    paint14Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_14, paint14Stroke);
 
-    Paint paint_14_fill = Paint()..style = PaintingStyle.fill;
-    paint_14_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_14, paint_14_fill);
+    Paint paint14Fill = Paint()..style = PaintingStyle.fill;
+    paint14Fill.color = const Color(0xff000000).withOpacity(1.0);
+
+    canvas.drawPath(path_14, paint14Fill);
 
     Path path_15 = Path();
     path_15.moveTo(size.width * 0.6686813, size.height * 0.4068508);
@@ -436,17 +443,18 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6855777,
         size.height * 0.4105733);
 
-    Paint paint_15_stroke = Paint()
+    Paint paint15Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_15_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_15_stroke.strokeCap = StrokeCap.round;
-    paint_15_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_15, paint_15_stroke);
+    paint15Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint15Stroke.strokeCap = StrokeCap.round;
+    paint15Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_15, paint15Stroke);
 
-    Paint paint_15_fill = Paint()..style = PaintingStyle.fill;
-    paint_15_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_15, paint_15_fill);
+    Paint paint15Fill = Paint()..style = PaintingStyle.fill;
+    paint15Fill.color = const Color(0xff000000).withOpacity(1.0);
+    paint15Fill.blendMode = BlendMode.softLight;
+    canvas.drawPath(path_15, paint15Fill);
 
     Path path_16 = Path();
     path_16.moveTo(size.width * 0.6274223, size.height * 0.3580445);
@@ -480,9 +488,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.3580445);
     path_16.close();
 
-    Paint paint_16_fill = Paint()..style = PaintingStyle.fill;
-    paint_16_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_16, paint_16_fill);
+    Paint paint16Fill = Paint()..style = PaintingStyle.fill;
+    paint16Fill.color = Colors.white.withOpacity(1.0);
+    paint16Fill.blendMode = BlendMode.softLight;
+    canvas.drawPath(path_16, paint16Fill);
 
     Path path_17 = Path();
     path_17.moveTo(size.width * 0.6658526, size.height * 0.4153298);
@@ -509,9 +518,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.4153298);
     path_17.close();
 
-    Paint paint_17_fill = Paint()..style = PaintingStyle.fill;
-    paint_17_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_17, paint_17_fill);
+    Paint paint17Fill = Paint()..style = PaintingStyle.fill;
+    paint17Fill.color = Colors.white.withOpacity(1.0);
+    paint17Fill.blendMode = BlendMode.modulate;
+    canvas.drawPath(path_17, paint17Fill);
 
     Path path_18 = Path();
     path_18.moveTo(size.width * 0.3119701, size.height * 0.4104712);
@@ -553,17 +563,17 @@ class PurpleBadge extends CustomPainter {
     path_18.lineTo(size.width * 0.3119701, size.height * 0.4104712);
     path_18.close();
 
-    Paint paint_18_stroke = Paint()
+    Paint paint18Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_18_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_18_stroke.strokeCap = StrokeCap.round;
-    paint_18_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_18, paint_18_stroke);
+    paint18Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint18Stroke.strokeCap = StrokeCap.round;
+    paint18Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_18, paint18Stroke);
 
-    Paint paint_18_fill = Paint()..style = PaintingStyle.fill;
-    paint_18_fill.color = Color(0xff9691F2).withOpacity(1.0);
-    canvas.drawPath(path_18, paint_18_fill);
+    Paint paint18Fill = Paint()..style = PaintingStyle.fill;
+    paint18Fill.color = const Color(0xff9691F2).withOpacity(1.0);
+    canvas.drawPath(path_18, paint18Fill);
 
     Path path_19 = Path();
     path_19.moveTo(size.width * 0.6356733, size.height * 0.5409110);
@@ -590,17 +600,17 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.5409110);
     path_19.close();
 
-    Paint paint_19_stroke = Paint()
+    Paint paint19Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_19_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_19_stroke.strokeCap = StrokeCap.round;
-    paint_19_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_19, paint_19_stroke);
+    paint19Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint19Stroke.strokeCap = StrokeCap.round;
+    paint19Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_19, paint19Stroke);
 
-    Paint paint_19_fill = Paint()..style = PaintingStyle.fill;
-    paint_19_fill.color = Color(0xffF27E73).withOpacity(1.0);
-    canvas.drawPath(path_19, paint_19_fill);
+    Paint paint19Fill = Paint()..style = PaintingStyle.fill;
+    paint19Fill.color = const Color(0xffF27E73).withOpacity(0.70);
+    canvas.drawPath(path_19, paint19Fill);
 
     Path path_20 = Path();
     path_20.moveTo(size.width * 0.3727179, size.height * 0.3883429);
@@ -627,17 +637,17 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.3883429);
     path_20.close();
 
-    Paint paint_20_stroke = Paint()
+    Paint paint20Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_20_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_20_stroke.strokeCap = StrokeCap.round;
-    paint_20_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_20, paint_20_stroke);
+    paint20Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint20Stroke.strokeCap = StrokeCap.round;
+    paint20Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_20, paint20Stroke);
 
-    Paint paint_20_fill = Paint()..style = PaintingStyle.fill;
-    paint_20_fill.color = Color(0xffFFF5CF).withOpacity(1.0);
-    canvas.drawPath(path_20, paint_20_fill);
+    Paint paint20Fill = Paint()..style = PaintingStyle.fill;
+    paint20Fill.color = const Color(0xffFFF5CF).withOpacity(1.0);
+    canvas.drawPath(path_20, paint20Fill);
 
     Path path_21 = Path();
     path_21.moveTo(size.width * 0.3822271, size.height * 0.4051440);
@@ -755,17 +765,17 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.4051440);
     path_21.close();
 
-    Paint paint_21_stroke = Paint()
+    Paint paint21Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_21_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_21_stroke.strokeCap = StrokeCap.round;
-    paint_21_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_21, paint_21_stroke);
+    paint21Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint21Stroke.strokeCap = StrokeCap.round;
+    paint21Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_21, paint21Stroke);
 
-    Paint paint_21_fill = Paint()..style = PaintingStyle.fill;
-    paint_21_fill.color = Color(0xffF2BD57).withOpacity(1.0);
-    canvas.drawPath(path_21, paint_21_fill);
+    Paint paint21Fill = Paint()..style = PaintingStyle.fill;
+    paint21Fill.color = const Color(0xffF2BD57).withOpacity(1.0);
+    canvas.drawPath(path_21, paint21Fill);
 
     Path path_22 = Path();
     path_22.moveTo(size.width * 0.4227809, size.height * 0.3756257);
@@ -784,17 +794,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4837649,
         size.height * 0.3815183);
 
-    Paint paint_22_stroke = Paint()
+    Paint paint22Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_22_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_22_stroke.strokeCap = StrokeCap.round;
-    paint_22_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_22, paint_22_stroke);
+    paint22Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint22Stroke.strokeCap = StrokeCap.round;
+    paint22Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_22, paint22Stroke);
 
-    Paint paint_22_fill = Paint()..style = PaintingStyle.fill;
-    paint_22_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_22, paint_22_fill);
+    Paint paint22Fill = Paint()..style = PaintingStyle.fill;
+    paint22Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_22, paint22Fill);
 
     Path path_23 = Path();
     path_23.moveTo(size.width * 0.3812849, size.height * 0.4609319);
@@ -813,17 +823,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.3973956,
         size.height * 0.5026021);
 
-    Paint paint_23_stroke = Paint()
+    Paint paint23Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_23_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_23_stroke.strokeCap = StrokeCap.round;
-    paint_23_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_23, paint_23_stroke);
+    paint23Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint23Stroke.strokeCap = StrokeCap.round;
+    paint23Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_23, paint23Stroke);
 
-    Paint paint_23_fill = Paint()..style = PaintingStyle.fill;
-    paint_23_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_23, paint_23_fill);
+    Paint paint23Fill = Paint()..style = PaintingStyle.fill;
+    paint23Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_23, paint23Fill);
 
     Path path_24 = Path();
     path_24.moveTo(size.width * 0.5134701, size.height * 0.3946492);
@@ -849,17 +859,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4691474,
         size.height * 0.3912382);
 
-    Paint paint_24_stroke = Paint()
+    Paint paint24Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_24_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_24_stroke.strokeCap = StrokeCap.round;
-    paint_24_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_24, paint_24_stroke);
+    paint24Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint24Stroke.strokeCap = StrokeCap.round;
+    paint24Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_24, paint24Stroke);
 
-    Paint paint_24_fill = Paint()..style = PaintingStyle.fill;
-    paint_24_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_24, paint_24_fill);
+    Paint paint24Fill = Paint()..style = PaintingStyle.fill;
+    paint24Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_24, paint24Fill);
 
     Path path_25 = Path();
     path_25.moveTo(size.width * 0.3790060, size.height * 0.4125393);
@@ -885,17 +895,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.3936231,
         size.height * 0.3912382);
 
-    Paint paint_25_stroke = Paint()
+    Paint paint25Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_25_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_25_stroke.strokeCap = StrokeCap.round;
-    paint_25_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_25, paint_25_stroke);
+    paint25Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint25Stroke.strokeCap = StrokeCap.round;
+    paint25Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_25, paint25Stroke);
 
-    Paint paint_25_fill = Paint()..style = PaintingStyle.fill;
-    paint_25_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_25, paint_25_fill);
+    Paint paint25Fill = Paint()..style = PaintingStyle.fill;
+    paint25Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_25, paint25Fill);
 
     Path path_26 = Path();
     path_26.moveTo(size.width * 0.4069044, size.height * 0.4279974);
@@ -921,17 +931,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4477689,
         size.height * 0.4230340);
 
-    Paint paint_26_stroke = Paint()
+    Paint paint26Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_26_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_26_stroke.strokeCap = StrokeCap.round;
-    paint_26_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_26, paint_26_stroke);
+    paint26Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint26Stroke.strokeCap = StrokeCap.round;
+    paint26Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_26, paint26Stroke);
 
-    Paint paint_26_fill = Paint()..style = PaintingStyle.fill;
-    paint_26_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_26, paint_26_fill);
+    Paint paint26Fill = Paint()..style = PaintingStyle.fill;
+    paint26Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_26, paint26Fill);
 
     Path path_27 = Path();
     path_27.moveTo(size.width * 0.5022311, size.height * 0.4152251);
@@ -950,17 +960,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5416813,
         size.height * 0.4147618);
 
-    Paint paint_27_stroke = Paint()
+    Paint paint27Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_27_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_27_stroke.strokeCap = StrokeCap.round;
-    paint_27_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_27, paint_27_stroke);
+    paint27Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint27Stroke.strokeCap = StrokeCap.round;
+    paint27Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_27, paint27Stroke);
 
-    Paint paint_27_fill = Paint()..style = PaintingStyle.fill;
-    paint_27_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_27, paint_27_fill);
+    Paint paint27Fill = Paint()..style = PaintingStyle.fill;
+    paint27Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_27, paint27Fill);
 
     Path path_28 = Path();
     path_28.moveTo(size.width * 0.5098526, size.height * 0.4266518);
@@ -979,17 +989,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5416813,
         size.height * 0.4148141);
 
-    Paint paint_28_stroke = Paint()
+    Paint paint28Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_28_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_28_stroke.strokeCap = StrokeCap.round;
-    paint_28_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_28, paint_28_stroke);
+    paint28Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint28Stroke.strokeCap = StrokeCap.round;
+    paint28Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_28, paint28Stroke);
 
-    Paint paint_28_fill = Paint()..style = PaintingStyle.fill;
-    paint_28_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_28, paint_28_fill);
+    Paint paint28Fill = Paint()..style = PaintingStyle.fill;
+    paint28Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_28, paint28Fill);
 
     Path path_29 = Path();
     path_29.moveTo(size.width * 0.4723665, size.height * 0.4335288);
@@ -1001,17 +1011,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4987729,
         size.height * 0.4474895);
 
-    Paint paint_29_stroke = Paint()
+    Paint paint29Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_29_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_29_stroke.strokeCap = StrokeCap.round;
-    paint_29_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_29, paint_29_stroke);
+    paint29Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint29Stroke.strokeCap = StrokeCap.round;
+    paint29Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_29, paint29Stroke);
 
-    Paint paint_29_fill = Paint()..style = PaintingStyle.fill;
-    paint_29_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_29, paint_29_fill);
+    Paint paint29Fill = Paint()..style = PaintingStyle.fill;
+    paint29Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_29, paint29Fill);
 
     Path path_30 = Path();
     path_30.moveTo(size.width * 0.3749972, size.height * 0.4474895);
@@ -1030,17 +1040,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4378685,
         size.height * 0.4788717);
 
-    Paint paint_30_stroke = Paint()
+    Paint paint30Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_30_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_30_stroke.strokeCap = StrokeCap.round;
-    paint_30_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_30, paint_30_stroke);
+    paint30Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint30Stroke.strokeCap = StrokeCap.round;
+    paint30Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_30, paint30Stroke);
 
-    Paint paint_30_fill = Paint()..style = PaintingStyle.fill;
-    paint_30_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_30, paint_30_fill);
+    Paint paint30Fill = Paint()..style = PaintingStyle.fill;
+    paint30Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_30, paint30Fill);
 
     Path path_31 = Path();
     path_31.moveTo(size.width * 0.4088685, size.height * 0.4425759);
@@ -1052,17 +1062,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4158645,
         size.height * 0.4393717);
 
-    Paint paint_31_stroke = Paint()
+    Paint paint31Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_31_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_31_stroke.strokeCap = StrokeCap.round;
-    paint_31_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_31, paint_31_stroke);
+    paint31Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint31Stroke.strokeCap = StrokeCap.round;
+    paint31Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_31, paint31Stroke);
 
-    Paint paint_31_fill = Paint()..style = PaintingStyle.fill;
-    paint_31_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_31, paint_31_fill);
+    Paint paint31Fill = Paint()..style = PaintingStyle.fill;
+    paint31Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_31, paint31Fill);
 
     Path path_32 = Path();
     path_32.moveTo(size.width * 0.5366534, size.height * 0.4526571);
@@ -1074,17 +1084,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5842789,
         size.height * 0.4430942);
 
-    Paint paint_32_stroke = Paint()
+    Paint paint32Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_32_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_32_stroke.strokeCap = StrokeCap.round;
-    paint_32_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_32, paint_32_stroke);
+    paint32Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint32Stroke.strokeCap = StrokeCap.round;
+    paint32Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_32, paint32Stroke);
 
-    Paint paint_32_fill = Paint()..style = PaintingStyle.fill;
-    paint_32_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_32, paint_32_fill);
+    Paint paint32Fill = Paint()..style = PaintingStyle.fill;
+    paint32Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_32, paint32Fill);
 
     Path path_33 = Path();
     path_33.moveTo(size.width * 0.4069044, size.height * 0.5150602);
@@ -1096,17 +1106,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5063984,
         size.height * 0.5534241);
 
-    Paint paint_33_stroke = Paint()
+    Paint paint33Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_33_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_33_stroke.strokeCap = StrokeCap.round;
-    paint_33_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_33, paint_33_stroke);
+    paint33Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint33Stroke.strokeCap = StrokeCap.round;
+    paint33Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_33, paint33Stroke);
 
-    Paint paint_33_fill = Paint()..style = PaintingStyle.fill;
-    paint_33_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_33, paint_33_fill);
+    Paint paint33Fill = Paint()..style = PaintingStyle.fill;
+    paint33Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_33, paint33Fill);
 
     Path path_34 = Path();
     path_34.moveTo(size.width * 0.4626215, size.height * 0.5042042);
@@ -1125,17 +1135,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4602629,
         size.height * 0.4912277);
 
-    Paint paint_34_stroke = Paint()
+    Paint paint34Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_34_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_34_stroke.strokeCap = StrokeCap.round;
-    paint_34_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_34, paint_34_stroke);
+    paint34Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint34Stroke.strokeCap = StrokeCap.round;
+    paint34Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_34, paint34Stroke);
 
-    Paint paint_34_fill = Paint()..style = PaintingStyle.fill;
-    paint_34_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_34, paint_34_fill);
+    Paint paint34Fill = Paint()..style = PaintingStyle.fill;
+    paint34Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_34, paint34Fill);
 
     Path path_35 = Path();
     path_35.moveTo(size.width * 0.4602669, size.height * 0.4911754);
@@ -1147,17 +1157,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4595578,
         size.height * 0.4644476);
 
-    Paint paint_35_stroke = Paint()
+    Paint paint35Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_35_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_35_stroke.strokeCap = StrokeCap.round;
-    paint_35_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_35, paint_35_stroke);
+    paint35Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint35Stroke.strokeCap = StrokeCap.round;
+    paint35Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_35, paint35Stroke);
 
-    Paint paint_35_fill = Paint()..style = PaintingStyle.fill;
-    paint_35_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_35, paint_35_fill);
+    Paint paint35Fill = Paint()..style = PaintingStyle.fill;
+    paint35Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_35, paint35Fill);
 
     Path path_36 = Path();
     path_36.moveTo(size.width * 0.5562191, size.height * 0.5418429);
@@ -1169,17 +1179,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5894622,
         size.height * 0.5291754);
 
-    Paint paint_36_stroke = Paint()
+    Paint paint36Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_36_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_36_stroke.strokeCap = StrokeCap.round;
-    paint_36_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_36, paint_36_stroke);
+    paint36Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint36Stroke.strokeCap = StrokeCap.round;
+    paint36Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_36, paint36Stroke);
 
-    Paint paint_36_fill = Paint()..style = PaintingStyle.fill;
-    paint_36_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_36, paint_36_fill);
+    Paint paint36Fill = Paint()..style = PaintingStyle.fill;
+    paint36Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_36, paint36Fill);
 
     Path path_37 = Path();
     path_37.moveTo(size.width * 0.6073825, size.height * 0.4974319);
@@ -1191,17 +1201,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5720159,
         size.height * 0.5067906);
 
-    Paint paint_37_stroke = Paint()
+    Paint paint37Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_37_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_37_stroke.strokeCap = StrokeCap.round;
-    paint_37_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_37, paint_37_stroke);
+    paint37Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint37Stroke.strokeCap = StrokeCap.round;
+    paint37Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_37, paint37Stroke);
 
-    Paint paint_37_fill = Paint()..style = PaintingStyle.fill;
-    paint_37_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_37, paint_37_fill);
+    Paint paint37Fill = Paint()..style = PaintingStyle.fill;
+    paint37Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_37, paint37Fill);
 
     Path path_38 = Path();
     path_38.moveTo(size.width * 0.5945737, size.height * 0.4909162);
@@ -1213,17 +1223,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5761833,
         size.height * 0.4680654);
 
-    Paint paint_38_stroke = Paint()
+    Paint paint38Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_38_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_38_stroke.strokeCap = StrokeCap.round;
-    paint_38_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_38, paint_38_stroke);
+    paint38Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint38Stroke.strokeCap = StrokeCap.round;
+    paint38Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_38, paint38Stroke);
 
-    Paint paint_38_fill = Paint()..style = PaintingStyle.fill;
-    paint_38_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_38, paint_38_fill);
+    Paint paint38Fill = Paint()..style = PaintingStyle.fill;
+    paint38Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_38, paint38Fill);
 
     Path path_39 = Path();
     path_39.moveTo(size.width * 0.5328008, size.height * 0.4926230);
@@ -1235,17 +1245,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5456135,
         size.height * 0.4725628);
 
-    Paint paint_39_stroke = Paint()
+    Paint paint39Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_39_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_39_stroke.strokeCap = StrokeCap.round;
-    paint_39_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_39, paint_39_stroke);
+    paint39Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint39Stroke.strokeCap = StrokeCap.round;
+    paint39Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_39, paint39Stroke);
 
-    Paint paint_39_fill = Paint()..style = PaintingStyle.fill;
-    paint_39_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_39, paint_39_fill);
+    Paint paint39Fill = Paint()..style = PaintingStyle.fill;
+    paint39Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_39, paint39Fill);
 
     Path path_40 = Path();
     path_40.moveTo(size.width * 0.4924861, size.height * 0.4996545);
@@ -1257,17 +1267,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5258088,
         size.height * 0.4845576);
 
-    Paint paint_40_stroke = Paint()
+    Paint paint40Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_40_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_40_stroke.strokeCap = StrokeCap.round;
-    paint_40_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_40, paint_40_stroke);
+    paint40Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint40Stroke.strokeCap = StrokeCap.round;
+    paint40Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_40, paint40Stroke);
 
-    Paint paint_40_fill = Paint()..style = PaintingStyle.fill;
-    paint_40_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_40, paint_40_fill);
+    Paint paint40Fill = Paint()..style = PaintingStyle.fill;
+    paint40Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_40, paint40Fill);
 
     Path path_41 = Path();
     path_41.moveTo(size.width * 0.5181833, size.height * 0.5397225);
@@ -1279,17 +1289,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5225060,
         size.height * 0.5521309);
 
-    Paint paint_41_stroke = Paint()
+    Paint paint41Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_41_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_41_stroke.strokeCap = StrokeCap.round;
-    paint_41_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_41, paint_41_stroke);
+    paint41Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint41Stroke.strokeCap = StrokeCap.round;
+    paint41Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_41, paint41Stroke);
 
-    Paint paint_41_fill = Paint()..style = PaintingStyle.fill;
-    paint_41_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_41, paint_41_fill);
+    Paint paint41Fill = Paint()..style = PaintingStyle.fill;
+    paint41Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_41, paint41Fill);
 
     Path path_42 = Path();
     path_42.moveTo(size.width * 0.4886335, size.height * 0.5337775);
@@ -1301,17 +1311,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4928008,
         size.height * 0.5313482);
 
-    Paint paint_42_stroke = Paint()
+    Paint paint42Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_42_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_42_stroke.strokeCap = StrokeCap.round;
-    paint_42_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_42, paint_42_stroke);
+    paint42Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint42Stroke.strokeCap = StrokeCap.round;
+    paint42Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_42, paint42Stroke);
 
-    Paint paint_42_fill = Paint()..style = PaintingStyle.fill;
-    paint_42_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_42, paint_42_fill);
+    Paint paint42Fill = Paint()..style = PaintingStyle.fill;
+    paint42Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_42, paint42Fill);
 
     Path path_43 = Path();
     path_43.moveTo(size.width * 0.4773187, size.height * 0.4559686);
@@ -1323,17 +1333,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5049044,
         size.height * 0.4678089);
 
-    Paint paint_43_stroke = Paint()
+    Paint paint43Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_43_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_43_stroke.strokeCap = StrokeCap.round;
-    paint_43_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_43, paint_43_stroke);
+    paint43Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint43Stroke.strokeCap = StrokeCap.round;
+    paint43Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_43, paint43Stroke);
 
-    Paint paint_43_fill = Paint()..style = PaintingStyle.fill;
-    paint_43_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_43, paint_43_fill);
+    Paint paint43Fill = Paint()..style = PaintingStyle.fill;
+    paint43Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_43, paint43Fill);
 
     Path path_44 = Path();
     path_44.moveTo(size.width * 0.5258088, size.height * 0.4845576);
@@ -1345,17 +1355,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5071036,
         size.height * 0.4684791);
 
-    Paint paint_44_stroke = Paint()
+    Paint paint44Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_44_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_44_stroke.strokeCap = StrokeCap.round;
-    paint_44_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_44, paint_44_stroke);
+    paint44Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint44Stroke.strokeCap = StrokeCap.round;
+    paint44Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_44, paint44Stroke);
 
-    Paint paint_44_fill = Paint()..style = PaintingStyle.fill;
-    paint_44_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_44, paint_44_fill);
+    Paint paint44Fill = Paint()..style = PaintingStyle.fill;
+    paint44Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_44, paint44Fill);
 
     Path path_45 = Path();
     path_45.moveTo(size.width * 0.3995976, size.height * 0.4933482);
@@ -1367,17 +1377,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4404622,
         size.height * 0.4984136);
 
-    Paint paint_45_stroke = Paint()
+    Paint paint45Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_45_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_45_stroke.strokeCap = StrokeCap.round;
-    paint_45_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_45, paint_45_stroke);
+    paint45Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint45Stroke.strokeCap = StrokeCap.round;
+    paint45Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_45, paint45Stroke);
 
-    Paint paint_45_fill = Paint()..style = PaintingStyle.fill;
-    paint_45_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_45, paint_45_fill);
+    Paint paint45Fill = Paint()..style = PaintingStyle.fill;
+    paint45Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_45, paint45Fill);
 
     Path path_46 = Path();
     path_46.moveTo(size.width * 0.4432112, size.height * 0.5342435);
@@ -1389,17 +1399,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4787331,
         size.height * 0.5424634);
 
-    Paint paint_46_stroke = Paint()
+    Paint paint46Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_46_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_46_stroke.strokeCap = StrokeCap.round;
-    paint_46_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_46, paint_46_stroke);
+    paint46Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint46Stroke.strokeCap = StrokeCap.round;
+    paint46Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_46, paint46Stroke);
 
-    Paint paint_46_fill = Paint()..style = PaintingStyle.fill;
-    paint_46_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_46, paint_46_fill);
+    Paint paint46Fill = Paint()..style = PaintingStyle.fill;
+    paint46Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_46, paint46Fill);
 
     Path path_47 = Path();
     path_47.moveTo(size.width * 0.4467490, size.height * 0.5131492);
@@ -1411,17 +1421,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4592430,
         size.height * 0.5150105);
 
-    Paint paint_47_stroke = Paint()
+    Paint paint47Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_47_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_47_stroke.strokeCap = StrokeCap.round;
-    paint_47_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_47, paint_47_stroke);
+    paint47Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint47Stroke.strokeCap = StrokeCap.round;
+    paint47Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_47, paint47Stroke);
 
-    Paint paint_47_fill = Paint()..style = PaintingStyle.fill;
-    paint_47_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_47, paint_47_fill);
+    Paint paint47Fill = Paint()..style = PaintingStyle.fill;
+    paint47Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_47, paint47Fill);
 
     Path path_48 = Path();
     path_48.moveTo(size.width * 0.4841554, size.height * 0.5150105);
@@ -1433,17 +1443,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5085976,
         size.height * 0.5288141);
 
-    Paint paint_48_stroke = Paint()
+    Paint paint48Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_48_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_48_stroke.strokeCap = StrokeCap.round;
-    paint_48_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_48, paint_48_stroke);
+    paint48Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint48Stroke.strokeCap = StrokeCap.round;
+    paint48Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_48, paint48Stroke);
 
-    Paint paint_48_fill = Paint()..style = PaintingStyle.fill;
-    paint_48_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_48, paint_48_fill);
+    Paint paint48Fill = Paint()..style = PaintingStyle.fill;
+    paint48Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_48, paint48Fill);
 
     Path path_49 = Path();
     path_49.moveTo(size.width * 0.5570080, size.height * 0.5338298);
@@ -1455,17 +1465,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5822351,
         size.height * 0.5264372);
 
-    Paint paint_49_stroke = Paint()
+    Paint paint49Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_49_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_49_stroke.strokeCap = StrokeCap.round;
-    paint_49_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_49, paint_49_stroke);
+    paint49Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint49Stroke.strokeCap = StrokeCap.round;
+    paint49Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_49, paint49Stroke);
 
-    Paint paint_49_fill = Paint()..style = PaintingStyle.fill;
-    paint_49_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_49, paint_49_fill);
+    Paint paint49Fill = Paint()..style = PaintingStyle.fill;
+    paint49Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_49, paint49Fill);
 
     Path path_50 = Path();
     path_50.moveTo(size.width * 0.5919004, size.height * 0.5209555);
@@ -1477,17 +1487,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6026653,
         size.height * 0.5076152);
 
-    Paint paint_50_stroke = Paint()
+    Paint paint50Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_50_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_50_stroke.strokeCap = StrokeCap.round;
-    paint_50_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_50, paint_50_stroke);
+    paint50Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint50Stroke.strokeCap = StrokeCap.round;
+    paint50Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_50, paint50Stroke);
 
-    Paint paint_50_fill = Paint()..style = PaintingStyle.fill;
-    paint_50_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_50, paint_50_fill);
+    Paint paint50Fill = Paint()..style = PaintingStyle.fill;
+    paint50Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_50, paint50Fill);
 
     Path path_51 = Path();
     path_51.moveTo(size.width * 0.5607809, size.height * 0.4934503);
@@ -1499,17 +1509,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5725657,
         size.height * 0.4834215);
 
-    Paint paint_51_stroke = Paint()
+    Paint paint51Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_51_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_51_stroke.strokeCap = StrokeCap.round;
-    paint_51_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_51, paint_51_stroke);
+    paint51Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint51Stroke.strokeCap = StrokeCap.round;
+    paint51Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_51, paint51Stroke);
 
-    Paint paint_51_fill = Paint()..style = PaintingStyle.fill;
-    paint_51_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_51, paint_51_fill);
+    Paint paint51Fill = Paint()..style = PaintingStyle.fill;
+    paint51Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_51, paint51Fill);
 
     Path path_52 = Path();
     path_52.moveTo(size.width * 0.5982669, size.height * 0.4578272);
@@ -1521,17 +1531,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6065976,
         size.height * 0.4820759);
 
-    Paint paint_52_stroke = Paint()
+    Paint paint52Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_52_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_52_stroke.strokeCap = StrokeCap.round;
-    paint_52_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_52, paint_52_stroke);
+    paint52Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint52Stroke.strokeCap = StrokeCap.round;
+    paint52Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_52, paint52Stroke);
 
-    Paint paint_52_fill = Paint()..style = PaintingStyle.fill;
-    paint_52_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_52, paint_52_fill);
+    Paint paint52Fill = Paint()..style = PaintingStyle.fill;
+    paint52Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_52, paint52Fill);
 
     Path path_53 = Path();
     path_53.moveTo(size.width * 0.5669084, size.height * 0.4313063);
@@ -1543,17 +1553,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5697371,
         size.height * 0.4596387);
 
-    Paint paint_53_stroke = Paint()
+    Paint paint53Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_53_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_53_stroke.strokeCap = StrokeCap.round;
-    paint_53_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_53, paint_53_stroke);
+    paint53Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint53Stroke.strokeCap = StrokeCap.round;
+    paint53Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_53, paint53Stroke);
 
-    Paint paint_53_fill = Paint()..style = PaintingStyle.fill;
-    paint_53_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_53, paint_53_fill);
+    Paint paint53Fill = Paint()..style = PaintingStyle.fill;
+    paint53Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_53, paint53Fill);
 
     Path path_54 = Path();
     path_54.moveTo(size.width * 0.5375179, size.height * 0.4275314);
@@ -1565,17 +1575,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5247849,
         size.height * 0.4539005);
 
-    Paint paint_54_stroke = Paint()
+    Paint paint54Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_54_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_54_stroke.strokeCap = StrokeCap.round;
-    paint_54_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_54, paint_54_stroke);
+    paint54Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint54Stroke.strokeCap = StrokeCap.round;
+    paint54Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_54, paint54Stroke);
 
-    Paint paint_54_fill = Paint()..style = PaintingStyle.fill;
-    paint_54_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_54, paint_54_fill);
+    Paint paint54Fill = Paint()..style = PaintingStyle.fill;
+    paint54Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_54, paint54Fill);
 
     Path path_55 = Path();
     path_55.moveTo(size.width * 0.5319363, size.height * 0.4009581);
@@ -1587,17 +1597,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5293426,
         size.height * 0.4165707);
 
-    Paint paint_55_stroke = Paint()
+    Paint paint55Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_55_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_55_stroke.strokeCap = StrokeCap.round;
-    paint_55_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_55, paint_55_stroke);
+    paint55Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint55Stroke.strokeCap = StrokeCap.round;
+    paint55Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_55, paint55Stroke);
 
-    Paint paint_55_fill = Paint()..style = PaintingStyle.fill;
-    paint_55_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_55, paint_55_fill);
+    Paint paint55Fill = Paint()..style = PaintingStyle.fill;
+    paint55Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_55, paint55Fill);
 
     Path path_56 = Path();
     path_56.moveTo(size.width * 0.4829004, size.height * 0.4490916);
@@ -1609,17 +1619,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4997171,
         size.height * 0.4372513);
 
-    Paint paint_56_stroke = Paint()
+    Paint paint56Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_56_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_56_stroke.strokeCap = StrokeCap.round;
-    paint_56_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_56, paint_56_stroke);
+    paint56Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint56Stroke.strokeCap = StrokeCap.round;
+    paint56Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_56, paint56Stroke);
 
-    Paint paint_56_fill = Paint()..style = PaintingStyle.fill;
-    paint_56_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_56, paint_56_fill);
+    Paint paint56Fill = Paint()..style = PaintingStyle.fill;
+    paint56Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_56, paint56Fill);
 
     Path path_57 = Path();
     path_57.moveTo(size.width * 0.4758247, size.height * 0.4251021);
@@ -1631,17 +1641,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5016016,
         size.height * 0.4043168);
 
-    Paint paint_57_stroke = Paint()
+    Paint paint57Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_57_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_57_stroke.strokeCap = StrokeCap.round;
-    paint_57_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_57, paint_57_stroke);
+    paint57Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint57Stroke.strokeCap = StrokeCap.round;
+    paint57Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_57, paint57Stroke);
 
-    Paint paint_57_fill = Paint()..style = PaintingStyle.fill;
-    paint_57_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_57, paint_57_fill);
+    Paint paint57Fill = Paint()..style = PaintingStyle.fill;
+    paint57Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_57, paint57Fill);
 
     Path path_58 = Path();
     path_58.moveTo(size.width * 0.4494980, size.height * 0.4025602);
@@ -1653,17 +1663,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4633307,
         size.height * 0.3991990);
 
-    Paint paint_58_stroke = Paint()
+    Paint paint58Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_58_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_58_stroke.strokeCap = StrokeCap.round;
-    paint_58_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_58, paint_58_stroke);
+    paint58Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint58Stroke.strokeCap = StrokeCap.round;
+    paint58Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_58, paint58Stroke);
 
-    Paint paint_58_fill = Paint()..style = PaintingStyle.fill;
-    paint_58_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_58, paint_58_fill);
+    Paint paint58Fill = Paint()..style = PaintingStyle.fill;
+    paint58Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_58, paint58Fill);
 
     Path path_59 = Path();
     path_59.moveTo(size.width * 0.4411673, size.height * 0.3914450);
@@ -1675,17 +1685,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4675737,
         size.height * 0.3832775);
 
-    Paint paint_59_stroke = Paint()
+    Paint paint59Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_59_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_59_stroke.strokeCap = StrokeCap.round;
-    paint_59_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_59, paint_59_stroke);
+    paint59Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint59Stroke.strokeCap = StrokeCap.round;
+    paint59Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_59, paint59Stroke);
 
-    Paint paint_59_fill = Paint()..style = PaintingStyle.fill;
-    paint_59_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_59, paint_59_fill);
+    Paint paint59Fill = Paint()..style = PaintingStyle.fill;
+    paint59Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_59, paint59Fill);
 
     Path path_60 = Path();
     path_60.moveTo(size.width * 0.4113825, size.height * 0.4215864);
@@ -1697,17 +1707,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4432112,
         size.height * 0.4152801);
 
-    Paint paint_60_stroke = Paint()
+    Paint paint60Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_60_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_60_stroke.strokeCap = StrokeCap.round;
-    paint_60_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_60, paint_60_stroke);
+    paint60Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint60Stroke.strokeCap = StrokeCap.round;
+    paint60Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_60, paint60Stroke);
 
-    Paint paint_60_fill = Paint()..style = PaintingStyle.fill;
-    paint_60_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_60, paint_60_fill);
+    Paint paint60Fill = Paint()..style = PaintingStyle.fill;
+    paint60Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_60, paint60Fill);
 
     Path path_61 = Path();
     path_61.moveTo(size.width * 0.4376335, size.height * 0.4436623);
@@ -1719,17 +1729,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4563347,
         size.height * 0.4431440);
 
-    Paint paint_61_stroke = Paint()
+    Paint paint61Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_61_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_61_stroke.strokeCap = StrokeCap.round;
-    paint_61_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_61, paint_61_stroke);
+    paint61Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint61Stroke.strokeCap = StrokeCap.round;
+    paint61Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_61, paint61Stroke);
 
-    Paint paint_61_fill = Paint()..style = PaintingStyle.fill;
-    paint_61_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_61, paint_61_fill);
+    Paint paint61Fill = Paint()..style = PaintingStyle.fill;
+    paint61Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_61, paint61Fill);
 
     Path path_62 = Path();
     path_62.moveTo(size.width * 0.4570438, size.height * 0.4574660);
@@ -1741,17 +1751,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4695378,
         size.height * 0.4554503);
 
-    Paint paint_62_stroke = Paint()
+    Paint paint62Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_62_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_62_stroke.strokeCap = StrokeCap.round;
-    paint_62_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_62, paint_62_stroke);
+    paint62Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint62Stroke.strokeCap = StrokeCap.round;
+    paint62Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_62, paint62Stroke);
 
-    Paint paint_62_fill = Paint()..style = PaintingStyle.fill;
-    paint_62_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_62, paint_62_fill);
+    Paint paint62Fill = Paint()..style = PaintingStyle.fill;
+    paint62Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_62, paint62Fill);
 
     Path path_63 = Path();
     path_63.moveTo(size.width * 0.5227410, size.height * 0.5463403);
@@ -1763,17 +1773,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5431753,
         size.height * 0.5473246);
 
-    Paint paint_63_stroke = Paint()
+    Paint paint63Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_63_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_63_stroke.strokeCap = StrokeCap.round;
-    paint_63_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_63, paint_63_stroke);
+    paint63Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint63Stroke.strokeCap = StrokeCap.round;
+    paint63Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_63, paint63Stroke);
 
-    Paint paint_63_fill = Paint()..style = PaintingStyle.fill;
-    paint_63_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_63, paint_63_fill);
+    Paint paint63Fill = Paint()..style = PaintingStyle.fill;
+    paint63Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_63, paint63Fill);
 
     Path path_64 = Path();
     path_64.moveTo(size.width * 0.5057689, size.height * 0.4844031);
@@ -1785,17 +1795,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5240000,
         size.height * 0.4943822);
 
-    Paint paint_64_stroke = Paint()
+    Paint paint64Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_64_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_64_stroke.strokeCap = StrokeCap.round;
-    paint_64_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_64, paint_64_stroke);
+    paint64Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint64Stroke.strokeCap = StrokeCap.round;
+    paint64Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_64, paint64Stroke);
 
-    Paint paint_64_fill = Paint()..style = PaintingStyle.fill;
-    paint_64_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_64, paint_64_fill);
+    Paint paint64Fill = Paint()..style = PaintingStyle.fill;
+    paint64Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_64, paint64Fill);
 
     Path path_65 = Path();
     path_65.moveTo(size.width * 0.4790478, size.height * 0.4906597);
@@ -1807,17 +1817,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4905219,
         size.height * 0.4811963);
 
-    Paint paint_65_stroke = Paint()
+    Paint paint65Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_65_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_65_stroke.strokeCap = StrokeCap.round;
-    paint_65_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_65, paint_65_stroke);
+    paint65Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint65Stroke.strokeCap = StrokeCap.round;
+    paint65Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_65, paint65Stroke);
 
-    Paint paint_65_fill = Paint()..style = PaintingStyle.fill;
-    paint_65_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_65, paint_65_fill);
+    Paint paint65Fill = Paint()..style = PaintingStyle.fill;
+    paint65Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_65, paint65Fill);
 
     Path path_66 = Path();
     path_66.moveTo(size.width * 0.4593227, size.height * 0.4855916);
@@ -1829,17 +1839,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4672590,
         size.height * 0.4788717);
 
-    Paint paint_66_stroke = Paint()
+    Paint paint66Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_66_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_66_stroke.strokeCap = StrokeCap.round;
-    paint_66_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_66, paint_66_stroke);
+    paint66Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint66Stroke.strokeCap = StrokeCap.round;
+    paint66Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_66, paint66Stroke);
 
-    Paint paint_66_fill = Paint()..style = PaintingStyle.fill;
-    paint_66_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_66, paint_66_fill);
+    Paint paint66Fill = Paint()..style = PaintingStyle.fill;
+    paint66Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_66, paint66Fill);
 
     Path path_67 = Path();
     path_67.moveTo(size.width * 0.4369243, size.height * 0.4743194);
@@ -1851,17 +1861,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4493426,
         size.height * 0.4678586);
 
-    Paint paint_67_stroke = Paint()
+    Paint paint67Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_67_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_67_stroke.strokeCap = StrokeCap.round;
-    paint_67_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_67, paint_67_stroke);
+    paint67Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint67Stroke.strokeCap = StrokeCap.round;
+    paint67Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_67, paint67Stroke);
 
-    Paint paint_67_fill = Paint()..style = PaintingStyle.fill;
-    paint_67_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_67, paint_67_fill);
+    Paint paint67Fill = Paint()..style = PaintingStyle.fill;
+    paint67Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_67, paint67Fill);
 
     Path path_68 = Path();
     path_68.moveTo(size.width * 0.3834853, size.height * 0.4362173);
@@ -1873,17 +1883,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4015618,
         size.height * 0.4339948);
 
-    Paint paint_68_stroke = Paint()
+    Paint paint68Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_68_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_68_stroke.strokeCap = StrokeCap.round;
-    paint_68_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_68, paint_68_stroke);
+    paint68Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint68Stroke.strokeCap = StrokeCap.round;
+    paint68Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_68, paint68Stroke);
 
-    Paint paint_68_fill = Paint()..style = PaintingStyle.fill;
-    paint_68_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_68, paint_68_fill);
+    Paint paint68Fill = Paint()..style = PaintingStyle.fill;
+    paint68Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_68, paint68Fill);
 
     Path path_69 = Path();
     path_69.moveTo(size.width * 0.5210916, size.height * 0.4725131);
@@ -1895,17 +1905,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5328008,
         size.height * 0.4669293);
 
-    Paint paint_69_stroke = Paint()
+    Paint paint69Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_69_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_69_stroke.strokeCap = StrokeCap.round;
-    paint_69_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_69, paint_69_stroke);
+    paint69Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint69Stroke.strokeCap = StrokeCap.round;
+    paint69Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_69, paint69Stroke);
 
-    Paint paint_69_fill = Paint()..style = PaintingStyle.fill;
-    paint_69_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_69, paint_69_fill);
+    Paint paint69Fill = Paint()..style = PaintingStyle.fill;
+    paint69Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_69, paint69Fill);
 
     Path path_70 = Path();
     path_70.moveTo(size.width * 0.4836056, size.height * 0.4737016);
@@ -1917,17 +1927,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.4960239,
         size.height * 0.4669293);
 
-    Paint paint_70_stroke = Paint()
+    Paint paint70Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_70_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_70_stroke.strokeCap = StrokeCap.round;
-    paint_70_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_70, paint_70_stroke);
+    paint70Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint70Stroke.strokeCap = StrokeCap.round;
+    paint70Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_70, paint70Stroke);
 
-    Paint paint_70_fill = Paint()..style = PaintingStyle.fill;
-    paint_70_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_70, paint_70_fill);
+    Paint paint70Fill = Paint()..style = PaintingStyle.fill;
+    paint70Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_70, paint70Fill);
 
     Path path_71 = Path();
     path_71.moveTo(size.width * 0.5258088, size.height * 0.5416361);
@@ -1939,17 +1949,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5404223,
         size.height * 0.5405497);
 
-    Paint paint_71_stroke = Paint()
+    Paint paint71Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_71_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_71_stroke.strokeCap = StrokeCap.round;
-    paint_71_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_71, paint_71_stroke);
+    paint71Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint71Stroke.strokeCap = StrokeCap.round;
+    paint71Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_71, paint71Stroke);
 
-    Paint paint_71_fill = Paint()..style = PaintingStyle.fill;
-    paint_71_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_71, paint_71_fill);
+    Paint paint71Fill = Paint()..style = PaintingStyle.fill;
+    paint71Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_71, paint71Fill);
 
     Path path_72 = Path();
     path_72.moveTo(size.width * 0.5559084, size.height * 0.4880733);
@@ -1961,17 +1971,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5620359,
         size.height * 0.4834215);
 
-    Paint paint_72_stroke = Paint()
+    Paint paint72Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_72_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_72_stroke.strokeCap = StrokeCap.round;
-    paint_72_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_72, paint_72_stroke);
+    paint72Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint72Stroke.strokeCap = StrokeCap.round;
+    paint72Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_72, paint72Stroke);
 
-    Paint paint_72_fill = Paint()..style = PaintingStyle.fill;
-    paint_72_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_72, paint_72_fill);
+    Paint paint72Fill = Paint()..style = PaintingStyle.fill;
+    paint72Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_72, paint72Fill);
 
     Path path_73 = Path();
     path_73.moveTo(size.width * 0.5613267, size.height * 0.5280393);
@@ -1983,17 +1993,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5709960,
         size.height * 0.5249869);
 
-    Paint paint_73_stroke = Paint()
+    Paint paint73Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_73_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_73_stroke.strokeCap = StrokeCap.round;
-    paint_73_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_73, paint_73_stroke);
+    paint73Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint73Stroke.strokeCap = StrokeCap.round;
+    paint73Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_73, paint73Stroke);
 
-    Paint paint_73_fill = Paint()..style = PaintingStyle.fill;
-    paint_73_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_73, paint_73_fill);
+    Paint paint73Fill = Paint()..style = PaintingStyle.fill;
+    paint73Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_73, paint73Fill);
 
     Path path_74 = Path();
     path_74.moveTo(size.width * 0.5950438, size.height * 0.4636204);
@@ -2005,17 +2015,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5995219,
         size.height * 0.4729267);
 
-    Paint paint_74_stroke = Paint()
+    Paint paint74Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_74_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_74_stroke.strokeCap = StrokeCap.round;
-    paint_74_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_74, paint_74_stroke);
+    paint74Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint74Stroke.strokeCap = StrokeCap.round;
+    paint74Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_74, paint74Stroke);
 
-    Paint paint_74_fill = Paint()..style = PaintingStyle.fill;
-    paint_74_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_74, paint_74_fill);
+    Paint paint74Fill = Paint()..style = PaintingStyle.fill;
+    paint74Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_74, paint74Fill);
 
     Path path_75 = Path();
     path_75.moveTo(size.width * 0.5617211, size.height * 0.4366832);
@@ -2027,17 +2037,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5648645,
         size.height * 0.4463508);
 
-    Paint paint_75_stroke = Paint()
+    Paint paint75Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_75_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_75_stroke.strokeCap = StrokeCap.round;
-    paint_75_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_75, paint_75_stroke);
+    paint75Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint75Stroke.strokeCap = StrokeCap.round;
+    paint75Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_75, paint75Stroke);
 
-    Paint paint_75_fill = Paint()..style = PaintingStyle.fill;
-    paint_75_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_75, paint_75_fill);
+    Paint paint75Fill = Paint()..style = PaintingStyle.fill;
+    paint75Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_75, paint75Fill);
 
     Path path_76 = Path();
     path_76.moveTo(size.width * 0.4960239, size.height * 0.3856021);
@@ -2049,17 +2059,18 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.5030956,
         size.height * 0.3933586);
 
-    Paint paint_76_stroke = Paint()
+    Paint paint76Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_76_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_76_stroke.strokeCap = StrokeCap.round;
-    paint_76_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_76, paint_76_stroke);
+    paint76Stroke.color = const Color(0xff03403F).withOpacity(1.0);
 
-    Paint paint_76_fill = Paint()..style = PaintingStyle.fill;
-    paint_76_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_76, paint_76_fill);
+    paint76Stroke.strokeCap = StrokeCap.round;
+    paint76Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_76, paint76Stroke);
+
+    Paint paint76Fill = Paint()..style = PaintingStyle.fill;
+    paint76Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_76, paint76Fill);
 
     Path path_77 = Path();
     path_77.moveTo(size.width * 0.3698892, size.height * 0.5382749);
@@ -2087,9 +2098,10 @@ class PurpleBadge extends CustomPainter {
     path_77.lineTo(size.width * 0.3698892, size.height * 0.5382749);
     path_77.close();
 
-    Paint paint_77_fill = Paint()..style = PaintingStyle.fill;
-    paint_77_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_77, paint_77_fill);
+    Paint paint77Fill = Paint()..style = PaintingStyle.fill;
+    paint77Fill.color = Colors.white.withOpacity(1.0);
+    paint77Fill.blendMode = BlendMode.softLight;
+    canvas.drawPath(path_77, paint77Fill);
 
     Path path_78 = Path();
     path_78.moveTo(size.width * 0.6119402, size.height * 0.5202330);
@@ -2278,17 +2290,17 @@ class PurpleBadge extends CustomPainter {
     path_78.lineTo(size.width * 0.6119402, size.height * 0.5202330);
     path_78.close();
 
-    Paint paint_78_stroke = Paint()
+    Paint paint78Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_78_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_78_stroke.strokeCap = StrokeCap.round;
-    paint_78_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_78, paint_78_stroke);
+    paint78Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint78Stroke.strokeCap = StrokeCap.round;
+    paint78Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_78, paint78Stroke);
 
-    Paint paint_78_fill = Paint()..style = PaintingStyle.fill;
-    paint_78_fill.color = Color(0xffBFE375).withOpacity(1.0);
-    canvas.drawPath(path_78, paint_78_fill);
+    Paint paint78Fill = Paint()..style = PaintingStyle.fill;
+    paint78Fill.color = const Color(0xffBFE375).withOpacity(1.0);
+    canvas.drawPath(path_78, paint78Fill);
 
     Path path_79 = Path();
     path_79.moveTo(size.width * 0.5734303, size.height * 0.4700314);
@@ -2307,17 +2319,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.7139482,
         size.height * 0.5868743);
 
-    Paint paint_79_stroke = Paint()
+    Paint paint79Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_79_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_79_stroke.strokeCap = StrokeCap.round;
-    paint_79_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_79, paint_79_stroke);
+    paint79Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint79Stroke.strokeCap = StrokeCap.round;
+    paint79Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_79, paint79Stroke);
 
-    Paint paint_79_fill = Paint()..style = PaintingStyle.fill;
-    paint_79_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_79, paint_79_fill);
+    Paint paint79Fill = Paint()..style = PaintingStyle.fill;
+    paint79Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_79, paint79Fill);
 
     Path path_80 = Path();
     path_80.moveTo(size.width * 0.5838845, size.height * 0.5678482);
@@ -2336,17 +2348,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.7951275,
         size.height * 0.5263848);
 
-    Paint paint_80_stroke = Paint()
+    Paint paint80Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_80_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_80_stroke.strokeCap = StrokeCap.round;
-    paint_80_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_80, paint_80_stroke);
+    paint80Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint80Stroke.strokeCap = StrokeCap.round;
+    paint80Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_80, paint80Stroke);
 
-    Paint paint_80_fill = Paint()..style = PaintingStyle.fill;
-    paint_80_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_80, paint_80_fill);
+    Paint paint80Fill = Paint()..style = PaintingStyle.fill;
+    paint80Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_80, paint80Fill);
 
     Path path_81 = Path();
     path_81.moveTo(size.width * 0.7357171, size.height * 0.4482120);
@@ -2358,17 +2370,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6814104,
         size.height * 0.5251963);
 
-    Paint paint_81_stroke = Paint()
+    Paint paint81Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_81_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_81_stroke.strokeCap = StrokeCap.round;
-    paint_81_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_81, paint_81_stroke);
+    paint81Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint81Stroke.strokeCap = StrokeCap.round;
+    paint81Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_81, paint81Stroke);
 
-    Paint paint_81_fill = Paint()..style = PaintingStyle.fill;
-    paint_81_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_81, paint_81_fill);
+    Paint paint81Fill = Paint()..style = PaintingStyle.fill;
+    paint81Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_81, paint81Fill);
 
     Path path_82 = Path();
     path_82.moveTo(size.width * 0.7412191, size.height * 0.5096832);
@@ -2380,17 +2392,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.7322590,
         size.height * 0.4980000);
 
-    Paint paint_82_stroke = Paint()
+    Paint paint82Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_82_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_82_stroke.strokeCap = StrokeCap.round;
-    paint_82_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_82, paint_82_stroke);
+    paint82Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint82Stroke.strokeCap = StrokeCap.round;
+    paint82Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_82, paint82Stroke);
 
-    Paint paint_82_fill = Paint()..style = PaintingStyle.fill;
-    paint_82_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_82, paint_82_fill);
+    Paint paint82Fill = Paint()..style = PaintingStyle.fill;
+    paint82Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_82, paint82Fill);
 
     Path path_83 = Path();
     path_83.moveTo(size.width * 0.7416096, size.height * 0.5059634);
@@ -2402,17 +2414,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.7387012,
         size.height * 0.5005864);
 
-    Paint paint_83_stroke = Paint()
+    Paint paint83Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_83_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_83_stroke.strokeCap = StrokeCap.round;
-    paint_83_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_83, paint_83_stroke);
+    paint83Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint83Stroke.strokeCap = StrokeCap.round;
+    paint83Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_83, paint83Stroke);
 
-    Paint paint_83_fill = Paint()..style = PaintingStyle.fill;
-    paint_83_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_83, paint_83_fill);
+    Paint paint83Fill = Paint()..style = PaintingStyle.fill;
+    paint83Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_83, paint83Fill);
 
     Path path_84 = Path();
     path_84.moveTo(size.width * 0.6607410, size.height * 0.4837827);
@@ -2424,17 +2436,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6781116,
         size.height * 0.4853325);
 
-    Paint paint_84_stroke = Paint()
+    Paint paint84Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_84_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_84_stroke.strokeCap = StrokeCap.round;
-    paint_84_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_84, paint_84_stroke);
+    paint84Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint84Stroke.strokeCap = StrokeCap.round;
+    paint84Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_84, paint84Stroke);
 
-    Paint paint_84_fill = Paint()..style = PaintingStyle.fill;
-    paint_84_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_84, paint_84_fill);
+    Paint paint84Fill = Paint()..style = PaintingStyle.fill;
+    paint84Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_84, paint84Fill);
 
     Path path_85 = Path();
     path_85.moveTo(size.width * 0.6654582, size.height * 0.4809895);
@@ -2446,17 +2458,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6719044,
         size.height * 0.4812487);
 
-    Paint paint_85_stroke = Paint()
+    Paint paint85Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_85_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_85_stroke.strokeCap = StrokeCap.round;
-    paint_85_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_85, paint_85_stroke);
+    paint85Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint85Stroke.strokeCap = StrokeCap.round;
+    paint85Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_85, paint85Stroke);
 
-    Paint paint_85_fill = Paint()..style = PaintingStyle.fill;
-    paint_85_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_85, paint_85_fill);
+    Paint paint85Fill = Paint()..style = PaintingStyle.fill;
+    paint85Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_85, paint85Fill);
 
     Path path_86 = Path();
     path_86.moveTo(size.width * 0.6205060, size.height * 0.5254031);
@@ -2468,17 +2480,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6216853,
         size.height * 0.5174921);
 
-    Paint paint_86_stroke = Paint()
+    Paint paint86Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_86_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_86_stroke.strokeCap = StrokeCap.round;
-    paint_86_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_86, paint_86_stroke);
+    paint86Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint86Stroke.strokeCap = StrokeCap.round;
+    paint86Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_86, paint86Stroke);
 
-    Paint paint_86_fill = Paint()..style = PaintingStyle.fill;
-    paint_86_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_86, paint_86_fill);
+    Paint paint86Fill = Paint()..style = PaintingStyle.fill;
+    paint86Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_86, paint86Fill);
 
     Path path_87 = Path();
     path_87.moveTo(size.width * 0.6295418, size.height * 0.5249372);
@@ -2490,17 +2502,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6303307,
         size.height * 0.5196099);
 
-    Paint paint_87_stroke = Paint()
+    Paint paint87Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_87_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_87_stroke.strokeCap = StrokeCap.round;
-    paint_87_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_87, paint_87_stroke);
+    paint87Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint87Stroke.strokeCap = StrokeCap.round;
+    paint87Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_87, paint87Stroke);
 
-    Paint paint_87_fill = Paint()..style = PaintingStyle.fill;
-    paint_87_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_87, paint_87_fill);
+    Paint paint87Fill = Paint()..style = PaintingStyle.fill;
+    paint87Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_87, paint87Fill);
 
     Path path_88 = Path();
     path_88.moveTo(size.width * 0.6569721, size.height * 0.5620052);
@@ -2512,17 +2524,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6667928,
         size.height * 0.5644346);
 
-    Paint paint_88_stroke = Paint()
+    Paint paint88Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_88_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_88_stroke.strokeCap = StrokeCap.round;
-    paint_88_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_88, paint_88_stroke);
+    paint88Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint88Stroke.strokeCap = StrokeCap.round;
+    paint88Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_88, paint88Stroke);
 
-    Paint paint_88_fill = Paint()..style = PaintingStyle.fill;
-    paint_88_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_88, paint_88_fill);
+    Paint paint88Fill = Paint()..style = PaintingStyle.fill;
+    paint88Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_88, paint88Fill);
 
     Path path_89 = Path();
     path_89.moveTo(size.width * 0.6590916, size.height * 0.5573010);
@@ -2534,17 +2546,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.6684462,
         size.height * 0.5586963);
 
-    Paint paint_89_stroke = Paint()
+    Paint paint89Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_89_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_89_stroke.strokeCap = StrokeCap.round;
-    paint_89_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_89, paint_89_stroke);
+    paint89Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint89Stroke.strokeCap = StrokeCap.round;
+    paint89Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_89, paint89Stroke);
 
-    Paint paint_89_fill = Paint()..style = PaintingStyle.fill;
-    paint_89_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_89, paint_89_fill);
+    Paint paint89Fill = Paint()..style = PaintingStyle.fill;
+    paint89Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_89, paint89Fill);
 
     Path path_90 = Path();
     path_90.moveTo(size.width * 0.7253426, size.height * 0.5469607);
@@ -2556,17 +2568,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.7301355,
         size.height * 0.5397749);
 
-    Paint paint_90_stroke = Paint()
+    Paint paint90Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_90_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_90_stroke.strokeCap = StrokeCap.round;
-    paint_90_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_90, paint_90_stroke);
+    paint90Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint90Stroke.strokeCap = StrokeCap.round;
+    paint90Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_90, paint90Stroke);
 
-    Paint paint_90_fill = Paint()..style = PaintingStyle.fill;
-    paint_90_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_90, paint_90_fill);
+    Paint paint90Fill = Paint()..style = PaintingStyle.fill;
+    paint90Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_90, paint90Fill);
 
     Path path_91 = Path();
     path_91.moveTo(size.width * 0.7177211, size.height * 0.5430838);
@@ -2578,17 +2590,17 @@ class PurpleBadge extends CustomPainter {
         size.width * 0.7216494,
         size.height * 0.5370864);
 
-    Paint paint_91_stroke = Paint()
+    Paint paint91Stroke = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = size.width * 0.003934215;
-    paint_91_stroke.color = Color(0xff03403F).withOpacity(1.0);
-    paint_91_stroke.strokeCap = StrokeCap.round;
-    paint_91_stroke.strokeJoin = StrokeJoin.round;
-    canvas.drawPath(path_91, paint_91_stroke);
+    paint91Stroke.color = const Color(0xff03403F).withOpacity(1.0);
+    paint91Stroke.strokeCap = StrokeCap.round;
+    paint91Stroke.strokeJoin = StrokeJoin.round;
+    canvas.drawPath(path_91, paint91Stroke);
 
-    Paint paint_91_fill = Paint()..style = PaintingStyle.fill;
-    paint_91_fill.color = Color(0xff000000).withOpacity(1.0);
-    canvas.drawPath(path_91, paint_91_fill);
+    Paint paint91Fill = Paint()..style = PaintingStyle.fill;
+    paint91Fill.color = const Color(0xff000000).withOpacity(1.0);
+    canvas.drawPath(path_91, paint91Fill);
 
     Path path_92 = Path();
     path_92.moveTo(size.width * 0.6486414, size.height * 0.4816623);
@@ -2615,9 +2627,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.4816623);
     path_92.close();
 
-    Paint paint_92_fill = Paint()..style = PaintingStyle.fill;
-    paint_92_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_92, paint_92_fill);
+    Paint paint92Fill = Paint()..style = PaintingStyle.fill;
+    paint92Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_92, paint92Fill);
 
     Path path_93 = Path();
     path_93.moveTo(size.width * 0.7093108, size.height * 0.4606204);
@@ -2645,9 +2657,9 @@ class PurpleBadge extends CustomPainter {
     path_93.lineTo(size.width * 0.7093108, size.height * 0.4606204);
     path_93.close();
 
-    Paint paint_93_fill = Paint()..style = PaintingStyle.fill;
-    paint_93_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_93, paint_93_fill);
+    Paint paint93Fill = Paint()..style = PaintingStyle.fill;
+    paint93Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_93, paint93Fill);
 
     Path path_94 = Path();
     path_94.moveTo(size.width * 0.6297769, size.height * 0.5355340);
@@ -2667,9 +2679,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.5355340);
     path_94.close();
 
-    Paint paint_94_fill = Paint()..style = PaintingStyle.fill;
-    paint_94_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_94, paint_94_fill);
+    Paint paint94Fill = Paint()..style = PaintingStyle.fill;
+    paint94Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_94, paint94Fill);
 
     Path path_95 = Path();
     path_95.moveTo(size.width * 0.6886414, size.height * 0.4980524);
@@ -2711,9 +2723,9 @@ class PurpleBadge extends CustomPainter {
     path_95.lineTo(size.width * 0.6886414, size.height * 0.4980524);
     path_95.close();
 
-    Paint paint_95_fill = Paint()..style = PaintingStyle.fill;
-    paint_95_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_95, paint_95_fill);
+    Paint paint95Fill = Paint()..style = PaintingStyle.fill;
+    paint95Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_95, paint95Fill);
 
     Path path_96 = Path();
     path_96.moveTo(size.width * 0.7161474, size.height * 0.5051859);
@@ -2740,9 +2752,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.5051859);
     path_96.close();
 
-    Paint paint_96_fill = Paint()..style = PaintingStyle.fill;
-    paint_96_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_96, paint_96_fill);
+    Paint paint96Fill = Paint()..style = PaintingStyle.fill;
+    paint96Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_96, paint96Fill);
 
     Path path_97 = Path();
     path_97.moveTo(size.width * 0.6928048, size.height * 0.5450995);
@@ -2776,9 +2788,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.5450995);
     path_97.close();
 
-    Paint paint_97_fill = Paint()..style = PaintingStyle.fill;
-    paint_97_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_97, paint_97_fill);
+    Paint paint97Fill = Paint()..style = PaintingStyle.fill;
+    paint97Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_97, paint97Fill);
 
     Path path_98 = Path();
     path_98.moveTo(size.width * 0.7584263, size.height * 0.5318639);
@@ -2805,9 +2817,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.5318639);
     path_98.close();
 
-    Paint paint_98_fill = Paint()..style = PaintingStyle.fill;
-    paint_98_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_98, paint_98_fill);
+    Paint paint98Fill = Paint()..style = PaintingStyle.fill;
+    paint98Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_98, paint98Fill);
 
     Path path_99 = Path();
     path_99.moveTo(size.width * 0.6192470, size.height * 0.4951545);
@@ -2834,9 +2846,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.4951545);
     path_99.close();
 
-    Paint paint_99_fill = Paint()..style = PaintingStyle.fill;
-    paint_99_fill.color = Colors.white.withOpacity(1.0);
-    canvas.drawPath(path_99, paint_99_fill);
+    Paint paint99Fill = Paint()..style = PaintingStyle.fill;
+    paint99Fill.color = Colors.white.withOpacity(1.0);
+    canvas.drawPath(path_99, paint99Fill);
 
     Path path_100 = Path();
     path_100.moveTo(size.width * 0.4518606, size.height * 0.2268935);
@@ -3500,9 +3512,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.2367649);
     path_100.close();
 
-    Paint paint_100_fill = Paint()..style = PaintingStyle.fill;
-    paint_100_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_100, paint_100_fill);
+    Paint paint100Fill = Paint()..style = PaintingStyle.fill;
+    paint100Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_100, paint100Fill);
 
     Path path_101 = Path();
     path_101.moveTo(size.width * 0.3402406, size.height * 0.2787408);
@@ -4663,9 +4675,9 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.2802723);
     path_101.close();
 
-    Paint paint_101_fill = Paint()..style = PaintingStyle.fill;
-    paint_101_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_101, paint_101_fill);
+    Paint paint101Fill = Paint()..style = PaintingStyle.fill;
+    paint101Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    canvas.drawPath(path_101, paint101Fill);
 
     Path path_102 = Path();
     path_102.moveTo(size.width * 0.2038207, size.height * 0.3002513);
@@ -4687,9 +4699,10 @@ class PurpleBadge extends CustomPainter {
     path_102.lineTo(size.width * 0.1373781, size.height * 0.2489209);
     path_102.close();
 
-    Paint paint_102_fill = Paint()..style = PaintingStyle.fill;
-    paint_102_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_102, paint_102_fill);
+    Paint paint102Fill = Paint()..style = PaintingStyle.fill;
+    paint102Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint102Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_102, paint102Fill);
 
     Path path_103 = Path();
     path_103.moveTo(size.width * 0.2302486, size.height * 0.2423471);
@@ -4814,9 +4827,10 @@ class PurpleBadge extends CustomPainter {
     path_103.lineTo(size.width * 0.1604789, size.height * 0.2154825);
     path_103.close();
 
-    Paint paint_103_fill = Paint()..style = PaintingStyle.fill;
-    paint_103_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_103, paint_103_fill);
+    Paint paint103Fill = Paint()..style = PaintingStyle.fill;
+    paint103Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_103, paint103Fill);
+    paint103Fill.blendMode = BlendMode.multiply;
 
     Path path_104 = Path();
     path_104.moveTo(size.width * 0.3094040, size.height * 0.1779678);
@@ -4912,9 +4926,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.1779678);
     path_104.close();
 
-    Paint paint_104_fill = Paint()..style = PaintingStyle.fill;
-    paint_104_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_104, paint_104_fill);
+    Paint paint104Fill = Paint()..style = PaintingStyle.fill;
+    paint104Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint104Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_104, paint104Fill);
 
     Path path_105 = Path();
     path_105.moveTo(size.width * 0.3786924, size.height * 0.1479976);
@@ -4924,9 +4939,10 @@ class PurpleBadge extends CustomPainter {
     path_105.lineTo(size.width * 0.3786924, size.height * 0.1479976);
     path_105.close();
 
-    Paint paint_105_fill = Paint()..style = PaintingStyle.fill;
-    paint_105_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_105, paint_105_fill);
+    Paint paint105Fill = Paint()..style = PaintingStyle.fill;
+    paint105Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint105Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_105, paint105Fill);
 
     Path path_106 = Path();
     path_106.moveTo(size.width * 0.4436135, size.height * 0.1344746);
@@ -4942,9 +4958,10 @@ class PurpleBadge extends CustomPainter {
     path_106.lineTo(size.width * 0.4618685, size.height * 0.07709503);
     path_106.close();
 
-    Paint paint_106_fill = Paint()..style = PaintingStyle.fill;
-    paint_106_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_106, paint_106_fill);
+    Paint paint106Fill = Paint()..style = PaintingStyle.fill;
+    paint106Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint106Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_106, paint106Fill);
 
     Path path_107 = Path();
     path_107.moveTo(size.width * 0.5637649, size.height * 0.1364223);
@@ -5110,9 +5127,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.1364223);
     path_107.close();
 
-    Paint paint_107_fill = Paint()..style = PaintingStyle.fill;
-    paint_107_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_107, paint_107_fill);
+    Paint paint107Fill = Paint()..style = PaintingStyle.fill;
+    paint107Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint107Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_107, paint107Fill);
 
     Path path_108 = Path();
     path_108.moveTo(size.width * 0.6420478, size.height * 0.1542927);
@@ -5122,9 +5140,10 @@ class PurpleBadge extends CustomPainter {
     path_108.lineTo(size.width * 0.6420478, size.height * 0.1542927);
     path_108.close();
 
-    Paint paint_108_fill = Paint()..style = PaintingStyle.fill;
-    paint_108_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_108, paint_108_fill);
+    Paint paint108Fill = Paint()..style = PaintingStyle.fill;
+    paint108Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint108Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_108, paint108Fill);
 
     Path path_109 = Path();
     path_109.moveTo(size.width * 0.6926853, size.height * 0.1770702);
@@ -5226,9 +5245,10 @@ class PurpleBadge extends CustomPainter {
     path_109.lineTo(size.width * 0.6726813, size.height * 0.1660039);
     path_109.close();
 
-    Paint paint_109_fill = Paint()..style = PaintingStyle.fill;
-    paint_109_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_109, paint_109_fill);
+    Paint paint109Fill = Paint()..style = PaintingStyle.fill;
+    paint109Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint109Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_109, paint109Fill);
 
     Path path_110 = Path();
     path_110.moveTo(size.width * 0.7480598, size.height * 0.2166440);
@@ -5256,9 +5276,10 @@ class PurpleBadge extends CustomPainter {
     path_110.lineTo(size.width * 0.8497530, size.height * 0.2249510);
     path_110.close();
 
-    Paint paint_110_fill = Paint()..style = PaintingStyle.fill;
-    paint_110_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_110, paint_110_fill);
+    Paint paint110Fill = Paint()..style = PaintingStyle.fill;
+    paint110Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint110Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_110, paint110Fill);
 
     Path path_111 = Path();
     path_111.moveTo(size.width * 0.7882629, size.height * 0.2713796);
@@ -5383,9 +5404,10 @@ class PurpleBadge extends CustomPainter {
     path_111.lineTo(size.width * 0.8673187, size.height * 0.2602003);
     path_111.close();
 
-    Paint paint_111_fill = Paint()..style = PaintingStyle.fill;
-    paint_111_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_111, paint_111_fill);
+    Paint paint111Fill = Paint()..style = PaintingStyle.fill;
+    paint111Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_111, paint111Fill);
+    paint111Fill.blendMode = BlendMode.multiply;
 
     Path path_112 = Path();
     path_112.moveTo(size.width * 0.1190127, size.height * 0.7549634);
@@ -5413,9 +5435,10 @@ class PurpleBadge extends CustomPainter {
     path_112.lineTo(size.width * 0.1190127, size.height * 0.7549634);
     path_112.close();
 
-    Paint paint_112_fill = Paint()..style = PaintingStyle.fill;
-    paint_112_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_112, paint_112_fill);
+    Paint paint112Fill = Paint()..style = PaintingStyle.fill;
+    paint112Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_112, paint112Fill);
+    paint112Fill.blendMode = BlendMode.multiply;
 
     Path path_113 = Path();
     path_113.moveTo(size.width * 0.1394422, size.height * 0.7871047);
@@ -5437,9 +5460,10 @@ class PurpleBadge extends CustomPainter {
     path_113.lineTo(size.width * 0.1582761, size.height * 0.7991492);
     path_113.close();
 
-    Paint paint_113_fill = Paint()..style = PaintingStyle.fill;
-    paint_113_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_113, paint_113_fill);
+    Paint paint113Fill = Paint()..style = PaintingStyle.fill;
+    paint113Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_113, paint113Fill);
+    paint113Fill.blendMode = BlendMode.multiply;
 
     Path path_114 = Path();
     path_114.moveTo(size.width * 0.1690183, size.height * 0.8200000);
@@ -5541,9 +5565,10 @@ class PurpleBadge extends CustomPainter {
     path_114.lineTo(size.width * 0.1637203, size.height * 0.8149476);
     path_114.close();
 
-    Paint paint_114_fill = Paint()..style = PaintingStyle.fill;
-    paint_114_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_114, paint_114_fill);
+    Paint paint114Fill = Paint()..style = PaintingStyle.fill;
+    paint114Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint114Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_114, paint114Fill);
 
     Path path_115 = Path();
     path_115.moveTo(size.width * 0.1897952, size.height * 0.8381702);
@@ -5571,9 +5596,10 @@ class PurpleBadge extends CustomPainter {
     path_115.lineTo(size.width * 0.2263522, size.height * 0.8371152);
     path_115.close();
 
-    Paint paint_115_fill = Paint()..style = PaintingStyle.fill;
-    paint_115_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_115, paint_115_fill);
+    Paint paint115Fill = Paint()..style = PaintingStyle.fill;
+    paint115Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint115Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_115, paint115Fill);
 
     Path path_116 = Path();
     path_116.moveTo(size.width * 0.2317861, size.height * 0.8670419);
@@ -5601,9 +5627,10 @@ class PurpleBadge extends CustomPainter {
     path_116.lineTo(size.width * 0.2317861, size.height * 0.8670419);
     path_116.close();
 
-    Paint paint_116_fill = Paint()..style = PaintingStyle.fill;
-    paint_116_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_116, paint_116_fill);
+    Paint paint116Fill = Paint()..style = PaintingStyle.fill;
+    paint116Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint116Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_116, paint116Fill);
 
     Path path_117 = Path();
     path_117.moveTo(size.width * 0.2725538, size.height * 0.8881230);
@@ -5613,9 +5640,10 @@ class PurpleBadge extends CustomPainter {
     path_117.lineTo(size.width * 0.2725538, size.height * 0.8881230);
     path_117.close();
 
-    Paint paint_117_fill = Paint()..style = PaintingStyle.fill;
-    paint_117_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_117, paint_117_fill);
+    Paint paint117Fill = Paint()..style = PaintingStyle.fill;
+    paint117Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint117Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_117, paint117Fill);
 
     Path path_118 = Path();
     path_118.moveTo(size.width * 0.2961578, size.height * 0.8980838);
@@ -5631,9 +5659,10 @@ class PurpleBadge extends CustomPainter {
     path_118.lineTo(size.width * 0.3226028, size.height * 0.8864346);
     path_118.close();
 
-    Paint paint_118_fill = Paint()..style = PaintingStyle.fill;
-    paint_118_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_118, paint_118_fill);
+    Paint paint118Fill = Paint()..style = PaintingStyle.fill;
+    paint118Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint118Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_118, paint118Fill);
 
     Path path_119 = Path();
     path_119.moveTo(size.width * 0.3453936, size.height * 0.9146702);
@@ -5655,9 +5684,10 @@ class PurpleBadge extends CustomPainter {
     path_119.lineTo(size.width * 0.3480207, size.height * 0.9049319);
     path_119.close();
 
-    Paint paint_119_fill = Paint()..style = PaintingStyle.fill;
-    paint_119_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_119, paint_119_fill);
+    Paint paint119Fill = Paint()..style = PaintingStyle.fill;
+    paint119Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint119Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_119, paint119Fill);
 
     Path path_120 = Path();
     path_120.moveTo(size.width * 0.3785131, size.height * 0.9224346);
@@ -5684,9 +5714,10 @@ class PurpleBadge extends CustomPainter {
     path_120.lineTo(size.width * 0.3785131, size.height * 0.9224346);
     path_120.close();
 
-    Paint paint_120_fill = Paint()..style = PaintingStyle.fill;
-    paint_120_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_120, paint_120_fill);
+    Paint paint120Fill = Paint()..style = PaintingStyle.fill;
+    paint120Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint120Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_120, paint120Fill);
 
     Path path_121 = Path();
     path_121.moveTo(size.width * 0.4028884, size.height * 0.9273168);
@@ -5862,9 +5893,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.9222932);
     path_121.close();
 
-    Paint paint_121_fill = Paint()..style = PaintingStyle.fill;
-    paint_121_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_121, paint_121_fill);
+    Paint paint121Fill = Paint()..style = PaintingStyle.fill;
+    paint121Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint121Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_121, paint121Fill);
 
     Path path_122 = Path();
     path_122.moveTo(size.width * 0.4447649, size.height * 0.9326754);
@@ -6040,9 +6072,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.9275471);
     path_122.close();
 
-    Paint paint_122_fill = Paint()..style = PaintingStyle.fill;
-    paint_122_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_122, paint_122_fill);
+    Paint paint122Fill = Paint()..style = PaintingStyle.fill;
+    paint122Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint122Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_122, paint122Fill);
 
     Path path_123 = Path();
     path_123.moveTo(size.width * 0.5016494, size.height * 0.9353377);
@@ -6340,9 +6373,10 @@ class PurpleBadge extends CustomPainter {
     path_123.lineTo(size.width * 0.4786255, size.height * 0.9345497);
     path_123.close();
 
-    Paint paint_123_fill = Paint()..style = PaintingStyle.fill;
-    paint_123_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_123, paint_123_fill);
+    Paint paint123Fill = Paint()..style = PaintingStyle.fill;
+    paint123Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint123Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_123, paint123Fill);
 
     Path path_124 = Path();
     path_124.moveTo(size.width * 0.5377888, size.height * 0.9338141);
@@ -6364,9 +6398,10 @@ class PurpleBadge extends CustomPainter {
     path_124.lineTo(size.width * 0.5377888, size.height * 0.9338141);
     path_124.close();
 
-    Paint paint_124_fill = Paint()..style = PaintingStyle.fill;
-    paint_124_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_124, paint_124_fill);
+    Paint paint124Fill = Paint()..style = PaintingStyle.fill;
+    paint124Fill.blendMode = BlendMode.multiply;
+    paint124Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_124, paint124Fill);
 
     Path path_125 = Path();
     path_125.moveTo(size.width * 0.5790797, size.height * 0.9299503);
@@ -6388,9 +6423,10 @@ class PurpleBadge extends CustomPainter {
     path_125.lineTo(size.width * 0.6016813, size.height * 0.9211283);
     path_125.close();
 
-    Paint paint_125_fill = Paint()..style = PaintingStyle.fill;
-    paint_125_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_125, paint_125_fill);
+    Paint paint125Fill = Paint()..style = PaintingStyle.fill;
+    paint125Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint125Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_125, paint125Fill);
 
     Path path_126 = Path();
     path_126.moveTo(size.width * 0.6371355, size.height * 0.9192199);
@@ -6406,9 +6442,10 @@ class PurpleBadge extends CustomPainter {
     path_126.lineTo(size.width * 0.6402948, size.height * 0.8983874);
     path_126.close();
 
-    Paint paint_126_fill = Paint()..style = PaintingStyle.fill;
-    paint_126_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_126, paint_126_fill);
+    Paint paint126Fill = Paint()..style = PaintingStyle.fill;
+    paint126Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint126Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_126, paint126Fill);
 
     Path path_127 = Path();
     path_127.moveTo(size.width * 0.6722311, size.height * 0.9099791);
@@ -6504,9 +6541,10 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.9099791);
     path_127.close();
 
-    Paint paint_127_fill = Paint()..style = PaintingStyle.fill;
-    paint_127_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_127, paint_127_fill);
+    Paint paint127Fill = Paint()..style = PaintingStyle.fill;
+    paint127Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint127Fill.blendMode = BlendMode.multiply;
+    canvas.drawPath(path_127, paint127Fill);
 
     Path path_128 = Path();
     path_128.moveTo(size.width * 0.7020916, size.height * 0.8993377);
@@ -6631,9 +6669,11 @@ class PurpleBadge extends CustomPainter {
     path_128.lineTo(size.width * 0.6870996, size.height * 0.8831204);
     path_128.close();
 
-    Paint paint_128_fill = Paint()..style = PaintingStyle.fill;
-    paint_128_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_128, paint_128_fill);
+    Paint paint128Fill = Paint()..style = PaintingStyle.fill;
+    paint128Fill.blendMode = BlendMode.multiply;
+
+    paint128Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_128, paint128Fill);
 
     Path path_129 = Path();
     path_129.moveTo(size.width * 0.7357888, size.height * 0.8850838);
@@ -6655,9 +6695,9 @@ class PurpleBadge extends CustomPainter {
     path_129.lineTo(size.width * 0.7507610, size.height * 0.8708796);
     path_129.close();
 
-    Paint paint_129_fill = Paint()..style = PaintingStyle.fill;
-    paint_129_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_129, paint_129_fill);
+    Paint paint129Fill = Paint()..style = PaintingStyle.fill;
+    paint129Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_129, paint129Fill);
 
     Path path_130 = Path();
     path_130.moveTo(size.width * 0.7729522, size.height * 0.8649948);
@@ -6673,9 +6713,9 @@ class PurpleBadge extends CustomPainter {
     path_130.lineTo(size.width * 0.7885737, size.height * 0.8552513);
     path_130.close();
 
-    Paint paint_130_fill = Paint()..style = PaintingStyle.fill;
-    paint_130_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_130, paint_130_fill);
+    Paint paint130Fill = Paint()..style = PaintingStyle.fill;
+    paint130Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_130, paint130Fill);
 
     Path path_131 = Path();
     path_131.moveTo(size.width * 0.8063068, size.height * 0.8422880);
@@ -6697,9 +6737,11 @@ class PurpleBadge extends CustomPainter {
     path_131.lineTo(size.width * 0.7984502, size.height * 0.8187775);
     path_131.close();
 
-    Paint paint_131_fill = Paint()..style = PaintingStyle.fill;
-    paint_131_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_131, paint_131_fill);
+    Paint paint131Fill = Paint()..style = PaintingStyle.fill;
+    paint131Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint131Fill.blendMode = BlendMode.multiply;
+
+    canvas.drawPath(path_131, paint131Fill);
 
     Path path_132 = Path();
     path_132.moveTo(size.width * 0.8296693, size.height * 0.8225654);
@@ -6824,9 +6866,11 @@ class PurpleBadge extends CustomPainter {
     path_132.lineTo(size.width * 0.8057570, size.height * 0.8119267);
     path_132.close();
 
-    Paint paint_132_fill = Paint()..style = PaintingStyle.fill;
-    paint_132_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_132, paint_132_fill);
+    Paint paint132Fill = Paint()..style = PaintingStyle.fill;
+    paint132Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint132Fill.blendMode = BlendMode.multiply;
+
+    canvas.drawPath(path_132, paint132Fill);
 
     Path path_133 = Path();
     path_133.moveTo(size.width * 0.8566335, size.height * 0.7944058);
@@ -6922,9 +6966,11 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.7944058);
     path_133.close();
 
-    Paint paint_133_fill = Paint()..style = PaintingStyle.fill;
-    paint_133_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_133, paint_133_fill);
+    Paint paint133Fill = Paint()..style = PaintingStyle.fill;
+    paint133Fill.blendMode = BlendMode.multiply;
+
+    paint133Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    canvas.drawPath(path_133, paint133Fill);
 
     Path path_134 = Path();
     path_134.moveTo(size.width * 0.8708008, size.height * 0.7742801);
@@ -6934,9 +6980,11 @@ class PurpleBadge extends CustomPainter {
     path_134.lineTo(size.width * 0.8708008, size.height * 0.7742801);
     path_134.close();
 
-    Paint paint_134_fill = Paint()..style = PaintingStyle.fill;
-    paint_134_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_134, paint_134_fill);
+    Paint paint134Fill = Paint()..style = PaintingStyle.fill;
+    paint134Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint134Fill.blendMode = BlendMode.multiply;
+
+    canvas.drawPath(path_134, paint134Fill);
 
     Path path_135 = Path();
     path_135.moveTo(size.width * 0.8809243, size.height * 0.7571911);
@@ -6952,9 +7000,11 @@ class PurpleBadge extends CustomPainter {
     path_135.lineTo(size.width * 0.8583227, size.height * 0.7424372);
     path_135.close();
 
-    Paint paint_135_fill = Paint()..style = PaintingStyle.fill;
-    paint_135_fill.color = Color(0xff8A79F3).withOpacity(1.0);
-    canvas.drawPath(path_135, paint_135_fill);
+    Paint paint135Fill = Paint()..style = PaintingStyle.fill;
+    paint135Fill.color = const Color(0xff8A79F3).withOpacity(1.0);
+    paint135Fill.blendMode = BlendMode.multiply;
+
+    canvas.drawPath(path_135, paint135Fill);
 
     Path path_136 = Path();
     path_136.moveTo(size.width * 0.1062578, size.height * 0.6645916);
@@ -7494,9 +7544,11 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.6523220);
     path_136.close();
 
-    Paint paint_136_fill = Paint()..style = PaintingStyle.fill;
-    paint_136_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_136, paint_136_fill);
+    Paint paint136Fill = Paint()..style = PaintingStyle.fill;
+    paint136Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    paint136Fill.blendMode = BlendMode.modulate;
+
+    canvas.drawPath(path_136, paint136Fill);
 
     Path path_137 = Path();
     path_137.moveTo(size.width * 0.1191781, size.height * 0.7136911);
@@ -7645,9 +7697,11 @@ class PurpleBadge extends CustomPainter {
     path_137.lineTo(size.width * 0.1688873, size.height * 0.7136911);
     path_137.close();
 
-    Paint paint_137_fill = Paint()..style = PaintingStyle.fill;
-    paint_137_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_137, paint_137_fill);
+    Paint paint137Fill = Paint()..style = PaintingStyle.fill;
+    paint137Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    paint137Fill.blendMode = BlendMode.modulate;
+
+    canvas.drawPath(path_137, paint137Fill);
 
     Path path_138 = Path();
     path_138.moveTo(size.width * 0.8206454, size.height * 0.6545209);
@@ -7888,9 +7942,11 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.6611178);
     path_138.close();
 
-    Paint paint_138_fill = Paint()..style = PaintingStyle.fill;
-    paint_138_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_138, paint_138_fill);
+    Paint paint138Fill = Paint()..style = PaintingStyle.fill;
+    paint138Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    paint138Fill.blendMode = BlendMode.modulate;
+
+    canvas.drawPath(path_138, paint138Fill);
 
     Path path_139 = Path();
     path_139.moveTo(size.width * 0.8482032, size.height * 0.7089738);
@@ -8262,9 +8318,11 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.7105000);
     path_139.close();
 
-    Paint paint_139_fill = Paint()..style = PaintingStyle.fill;
-    paint_139_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_139, paint_139_fill);
+    Paint paint139Fill = Paint()..style = PaintingStyle.fill;
+    paint139Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    paint139Fill.blendMode = BlendMode.modulate;
+
+    canvas.drawPath(path_139, paint139Fill);
 
     Path path_140 = Path();
     path_140.moveTo(size.width * 0.4030956, size.height * 0.7378141);
@@ -8795,9 +8853,11 @@ class PurpleBadge extends CustomPainter {
         size.height * 0.7468796);
     path_140.close();
 
-    Paint paint_140_fill = Paint()..style = PaintingStyle.fill;
-    paint_140_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_140, paint_140_fill);
+    Paint paint140Fill = Paint()..style = PaintingStyle.fill;
+    paint140Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    paint140Fill.blendMode = BlendMode.modulate;
+
+    canvas.drawPath(path_140, paint140Fill);
 
     Path path_141 = Path();
     path_141.moveTo(size.width * 0.4486494, size.height * 0.8237932);
@@ -8894,9 +8954,10 @@ class PurpleBadge extends CustomPainter {
     path_141.lineTo(size.width * 0.5416892, size.height * 0.8237932);
     path_141.close();
 
-    Paint paint_141_fill = Paint()..style = PaintingStyle.fill;
-    paint_141_fill.color = Color(0xff03403F).withOpacity(1.0);
-    canvas.drawPath(path_141, paint_141_fill);
+    Paint paint141Fill = Paint()..style = PaintingStyle.fill;
+    paint141Fill.color = const Color(0xff03403F).withOpacity(1.0);
+    paint141Fill.blendMode = BlendMode.modulate;
+    canvas.drawPath(path_141, paint141Fill);
   }
 
   @override
